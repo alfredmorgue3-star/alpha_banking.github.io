@@ -1,137 +1,324 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Luxury Banking</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+ALPHA
+<span>Banking</span>
+</div>
+
+<ul>
+
+<li>Sobre</li>
+<li>Soluções</li>
+<li>Cartões</li>
+<li>Investimentos</li>
+<li>Contato</li>
+
+</ul>
+
+<a class="button">
+Abra sua conta
+</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+
+O futuro<br>
+do banking<br>
+é Alpha.
+
+</h1>
+
+<p>
+
+Uma experiência financeira elegante,
+segura e exclusiva.
+
+</p>
+
+<a class="primary">
+
+Abrir Conta →
+
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="images/card.png" alt="Card">
+
+</div>
+
+</section>
+
+<section class="solutions">
+
+<div class="title">
+
+<h2>
+Tudo o que você precisa,
+em um só lugar.
+</h2>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Conta Digital</h3>
+
+<p>
+100% online
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Cartões</h3>
+
+<p>
+Exclusivos
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Investimentos</h3>
+
+<p>
+Alta performance
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Crédito</h3>
+
+<p>
+Inteligente
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Segurança</h3>
+
+<p>
+Proteção Premium
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="experience">
+
+<div>
+
+<h2>
+
+Inteligência que acompanha seu ritmo.
+
+</h2>
+
+<p>
+
+Gerencie sua vida financeira
+com clareza e elegância.
+
+</p>
+
+</div>
+
+<div>
+
+<img src="images/app.png">
+
+</div>
+
+</section>
+
+<footer>
+
+<div>
+
+<h3>Alpha Banking</h3>
+
+</div>
+
+<div>
+
+<a>Sobre</a>
+<a>Produtos</a>
+<a>Suporte</a>
+<a>Legal</a>
+
+</div>
+
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha Banking | Experiência Financeira Exclusiva</title>
+    <title>Luxury Banking - Alpha</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --black: #0a0a0a;
             --gold: #d4af37;
-            --gray: #c0c0c0;
         }
-        
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
             font-family: 'Inter', sans-serif;
-            background: var(--black);
+            background: #0a0a0a;
             color: #e5e5e5;
             line-height: 1.6;
         }
         
         .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 25px 8%;
-            background: rgba(10,10,10,0.98);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
+            background: rgba(10,10,10,0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
         }
         
         .logo {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 2.2rem;
+            font-size: 28px;
             font-weight: 600;
-            letter-spacing: 1px;
         }
         
         .logo span { color: var(--gold); }
         
-        .nav-links {
+        .navbar ul {
             display: flex;
-            gap: 45px;
             list-style: none;
+            gap: 40px;
         }
         
-        .nav-links a {
+        .navbar a, .navbar li {
             color: #e5e5e5;
             text-decoration: none;
             font-weight: 500;
-            transition: color 0.3s;
         }
         
-        .nav-links a:hover { color: var(--gold); }
-        
-        .cta-button {
+        .button {
             background: var(--gold);
-            color: var(--black);
-            padding: 14px 32px;
+            color: #0a0a0a;
+            padding: 12px 28px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            transition: all 0.3s;
-        }
-        
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
         }
         
         .hero {
-            min-height: 100vh;
+            padding: 180px 8% 120px;
             display: flex;
             align-items: center;
-            padding: 0 8%;
-            background: linear-gradient(rgba(10,10,10,0.85), rgba(10,10,10,0.85)), url('https://source.unsplash.com/random/1920x1080/?luxury') center/cover;
-        }
-        
-        .hero-content {
-            max-width: 650px;
+            gap: 5%;
+            min-height: 100vh;
         }
         
         .hero h1 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 4.8rem;
-            line-height: 1.05;
+            font-size: 4.5rem;
+            line-height: 1.1;
             margin-bottom: 25px;
         }
         
         .hero p {
-            font-size: 1.35rem;
+            font-size: 1.4rem;
+            max-width: 500px;
             margin-bottom: 40px;
-            opacity: 0.9;
         }
         
-        .section {
-            padding: 120px 8%;
+        .primary {
+            background: var(--gold);
+            color: #0a0a0a;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
         }
         
-        .section-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 3rem;
-            text-align: center;
-            margin-bottom: 70px;
+        .solutions {
+            padding: 100px 8%;
+            background: #111;
         }
         
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 60px;
         }
         
         .card {
-            background: #111;
-            padding: 40px 30px;
-            border-radius: 16px;
-            text-align: center;
-            transition: all 0.4s;
-        }
-        
-        .card:hover {
-            transform: translateY(-15px);
             background: #1a1a1a;
+            padding: 35px 25px;
+            border-radius: 12px;
+            text-align: center;
         }
         
         footer {
-            background: #050505;
-            padding: 80px 8% 40px;
+            background: #0a0a0a;
+            padding: 60px 8% 40px;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -141,47 +328,52 @@
 </head>
 <body>
 
-<nav class="navbar">
-    <div class="logo">ALPHA <span>Banking</span></div>
-    <ul class="nav-links">
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Soluções</a></li>
-        <li><a href="#">Cartões</a></li>
-        <li><a href="#">Investimentos</a></li>
-        <li><a href="#">Contato</a></li>
-    </ul>
-    <a href="#" class="cta-button">Abrir Conta</a>
-</nav>
+<header>
+    <nav class="navbar">
+        <div class="logo">ALPHA <span>Banking</span></div>
+        <ul>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Soluções</a></li>
+            <li><a href="#">Cartões</a></li>
+            <li><a href="#">Investimentos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        <a href="#" class="button">Abra sua conta</a>
+    </nav>
+</header>
 
 <section class="hero">
     <div class="hero-content">
-        <h1>O futuro do banking é Alpha.</h1>
-        <p>Uma experiência financeira elegante, segura e verdadeiramente exclusiva para quem valoriza o melhor.</p>
-        <a href="#" class="cta-button">Abrir Minha Conta →</a>
+        <h1>O futuro<br>do banking<br>é Alpha.</h1>
+        <p>Uma experiência financeira elegante, segura e exclusiva.</p>
+        <a href="#" class="primary">Abrir Conta →</a>
+    </div>
+    <div>
+        <!-- Imagem temporária -->
+        <p style="font-size: 5rem; opacity: 0.1;">💳</p>
     </div>
 </section>
 
-<section class="section" style="background: #111;">
-    <h2 class="section-title">Tudo que você precisa, em um só lugar</h2>
+<section class="solutions">
+    <h2 style="text-align:center; font-size: 2.8rem; margin-bottom: 20px;">Tudo o que você precisa, em um só lugar.</h2>
     <div class="grid">
-        <div class="card"><h3>Conta Digital Premium</h3><p>Gestão 100% online com total controle</p></div>
-        <div class="card"><h3>Cartões Black & Infinite</h3><p>Exclusividade e benefícios únicos</p></div>
-        <div class="card"><h3>Investimentos</h3><p>Alta performance com assessoria dedicada</p></div>
-        <div class="card"><h3>Crédito Inteligente</h3><p>Taxas personalizadas e flexibilidade</p></div>
-        <div class="card"><h3>Segurança Avançada</h3><p>Proteção premium em todos os níveis</p></div>
+        <div class="card"><h3>Conta Digital</h3><p>100% online</p></div>
+        <div class="card"><h3>Cartões</h3><p>Exclusivos</p></div>
+        <div class="card"><h3>Investimentos</h3><p>Alta performance</p></div>
+        <div class="card"><h3>Crédito</h3><p>Inteligente</p></div>
+        <div class="card"><h3>Segurança</h3><p>Proteção Premium</p></div>
     </div>
 </section>
 
 <footer>
     <div>
         <h3>Alpha Banking</h3>
-        <p>Excelência financeira desde 2026</p>
     </div>
     <div>
-        <a href="#" style="margin-right:20px; color:#c0c0c0; text-decoration:none;">Sobre Nós</a>
-        <a href="#" style="margin-right:20px; color:#c0c0c0; text-decoration:none;">Produtos</a>
-        <a href="#" style="margin-right:20px; color:#c0c0c0; text-decoration:none;">Suporte</a>
-        <a href="#" style="color:#c0c0c0; text-decoration:none;">Legal</a>
+        <a href="#">Sobre</a> | 
+        <a href="#">Produtos</a> | 
+        <a href="#">Suporte</a> | 
+        <a href="#">Legal</a>
     </div>
 </footer>
 
