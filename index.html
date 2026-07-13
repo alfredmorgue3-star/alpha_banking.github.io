@@ -9,8 +9,8 @@
     <style>
         :root {
             --black: #0a0a0a;
-            --deep: #2a0f18;
             --gold: #d4af37;
+            --gray: #c0c0c0;
         }
         
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -41,6 +41,7 @@
             font-weight: 600;
             letter-spacing: 1px;
         }
+        
         .logo span { color: var(--gold); }
         
         .nav-links {
@@ -48,12 +49,14 @@
             gap: 45px;
             list-style: none;
         }
+        
         .nav-links a {
             color: #e5e5e5;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
         }
+        
         .nav-links a:hover { color: var(--gold); }
         
         .cta-button {
@@ -65,67 +68,54 @@
             font-weight: 600;
             transition: all 0.3s;
         }
+        
         .cta-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.4);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
         }
         
-        /* HERO - Inspirado na imagem */
         .hero {
             min-height: 100vh;
             display: flex;
             align-items: center;
             padding: 0 8%;
-            background: linear-gradient(rgba(10,10,10,0.75), rgba(42,15,24,0.85));
-            position: relative;
-            overflow: hidden;
+            background: linear-gradient(rgba(10,10,10,0.85), rgba(10,10,10,0.85)), url('https://source.unsplash.com/random/1920x1080/?luxury') center/cover;
         }
+        
         .hero-content {
             max-width: 650px;
-            z-index: 2;
         }
+        
         .hero h1 {
             font-family: 'Cormorant Garamond', serif;
             font-size: 4.8rem;
             line-height: 1.05;
             margin-bottom: 25px;
         }
+        
         .hero p {
             font-size: 1.35rem;
             margin-bottom: 40px;
             opacity: 0.9;
         }
         
-        /* Cartão flutuante */
-        .hero-image img {
-            position: absolute;
-            right: 8%;
-            top: 25%;
-            width: 380px;
-            transform: rotate(-12deg);
-            box-shadow: 0 40px 80px rgba(0,0,0,0.85);
-            border-radius: 20px;
-            z-index: 3;
-            transition: transform 0.6s ease;
-        }
-        .hero-image img:hover {
-            transform: rotate(-8deg) scale(1.05);
-        }
-        
         .section {
             padding: 120px 8%;
         }
+        
         .section-title {
             font-family: 'Cormorant Garamond', serif;
             font-size: 3rem;
             text-align: center;
             margin-bottom: 70px;
         }
+        
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 30px;
         }
+        
         .card {
             background: #111;
             padding: 40px 30px;
@@ -133,23 +123,10 @@
             text-align: center;
             transition: all 0.4s;
         }
+        
         .card:hover {
             transform: translateY(-15px);
             background: #1a1a1a;
-        }
-        
-        /* Seção Experience */
-        .experience {
-            background: #111;
-            padding: 120px 8%;
-            display: flex;
-            align-items: center;
-            gap: 8%;
-        }
-        .experience img {
-            max-width: 480px;
-            border-radius: 24px;
-            box-shadow: 0 30px 70px rgba(0,0,0,0.7);
         }
         
         footer {
@@ -178,16 +155,13 @@
 
 <section class="hero">
     <div class="hero-content">
-        <h1>O futuro<br>do banking<br>é Alpha.</h1>
-        <p>Uma experiência financeira elegante, segura e verdadeiramente exclusiva.</p>
+        <h1>O futuro do banking é Alpha.</h1>
+        <p>Uma experiência financeira elegante, segura e verdadeiramente exclusiva para quem valoriza o melhor.</p>
         <a href="#" class="cta-button">Abrir Minha Conta →</a>
-    </div>
-    <div class="hero-image">
-        <img src="images/card.png" alt="Cartão Alpha Premium">
     </div>
 </section>
 
-<section class="section">
+<section class="section" style="background: #111;">
     <h2 class="section-title">Tudo que você precisa, em um só lugar</h2>
     <div class="grid">
         <div class="card"><h3>Conta Digital Premium</h3><p>Gestão 100% online com total controle</p></div>
@@ -195,16 +169,6 @@
         <div class="card"><h3>Investimentos</h3><p>Alta performance com assessoria dedicada</p></div>
         <div class="card"><h3>Crédito Inteligente</h3><p>Taxas personalizadas e flexibilidade</p></div>
         <div class="card"><h3>Segurança Avançada</h3><p>Proteção premium em todos os níveis</p></div>
-    </div>
-</section>
-
-<section class="experience">
-    <div>
-        <h2>Inteligência que acompanha seu ritmo.</h2>
-        <p>Gerencie sua vida financeira com clareza e elegância.</p>
-    </div>
-    <div>
-        <img src="images/app.png" alt="App Alpha Banking">
     </div>
 </section>
 
