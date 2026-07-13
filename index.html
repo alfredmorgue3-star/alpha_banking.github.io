@@ -265,17 +265,26 @@ com clareza e elegância.
             text-decoration: none;
             font-weight: 600;
         }
-        <section class="hero" style="background: linear-gradient(rgba(10,10,10,0.75), rgba(74,15,28,0.85)), url('https://picsum.photos/id/1015/1920/1080') center/cover no-repeat; position: relative;">
-    <div class="hero-content" style="position: relative; z-index: 2;">
-        <h1>O futuro<br>do banking<br>é Alpha.</h1>
-        <p>Uma experiência financeira elegante, segura e verdadeiramente exclusiva.</p>
-        <a href="#" class="cta-button">Abrir Minha Conta →</a>
-    </div>
-    
-    <!-- Imagem do cartão flutuante (como na referência) -->
-    <img src="images/card.png" alt="Cartão Alpha" style="position: absolute; right: 12%; top: 25%; width: 380px; transform: rotate(-12deg); box-shadow: 0 30px 60px rgba(0,0,0,0.8); border-radius: 20px; z-index: 3;">
-</section>
-
+        
+        .hero {
+            padding: 180px 8% 120px;
+            display: flex;
+            align-items: center;
+            gap: 5%;
+            min-height: 100vh;
+        }
+        
+        .hero h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4.5rem;
+            line-height: 1.1;
+            margin-bottom: 25px;
+        }
+        
+        .hero p {
+            font-size: 1.4rem;
+            max-width: 500px;
+            margin-bottom: 40px;
         }
         
         .primary {
