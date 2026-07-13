@@ -1,381 +1,460 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Luxury Banking</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-
-<header>
-
-<nav class="navbar">
-
-<div class="logo">
-ALPHA
-<span>Banking</span>
-</div>
-
-<ul>
-
-<li>Sobre</li>
-<li>Soluções</li>
-<li>Cartões</li>
-<li>Investimentos</li>
-<li>Contato</li>
-
-</ul>
-
-<a class="button">
-Abra sua conta
-</a>
-
-</nav>
-
-</header>
-
-<section class="hero">
-
-<div class="hero-content">
-
-<h1>
-
-O futuro<br>
-do banking<br>
-é Alpha.
-
-</h1>
-
-<p>
-
-Uma experiência financeira elegante,
-segura e exclusiva.
-
-</p>
-
-<a class="primary">
-
-Abrir Conta →
-
-</a>
-
-</div>
-
-<div class="hero-image">
-
-<img src="images/card.png" alt="Card">
-
-</div>
-
-</section>
-
-<section class="solutions">
-
-<div class="title">
-
-<h2>
-Tudo o que você precisa,
-em um só lugar.
-</h2>
-
-</div>
-
-<div class="grid">
-
-<div class="card">
-
-<h3>Conta Digital</h3>
-
-<p>
-100% online
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Cartões</h3>
-
-<p>
-Exclusivos
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Investimentos</h3>
-
-<p>
-Alta performance
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Crédito</h3>
-
-<p>
-Inteligente
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Segurança</h3>
-
-<p>
-Proteção Premium
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="experience">
-
-<div>
-
-<h2>
-
-Inteligência que acompanha seu ritmo.
-
-</h2>
-
-<p>
-
-Gerencie sua vida financeira
-com clareza e elegância.
-
-</p>
-
-</div>
-
-<div>
-
-<img src="images/app.png">
-
-</div>
-
-</section>
-
-<footer>
-
-<div>
-
-<h3>Alpha Banking</h3>
-
-</div>
-
-<div>
-
-<a>Sobre</a>
-<a>Produtos</a>
-<a>Suporte</a>
-<a>Legal</a>
-
-</div>
-
-</footer>
-
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxury Banking - Alpha</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --gold: #d4af37;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            background: #0a0a0a;
-            color: #e5e5e5;
-            line-height: 1.6;
-        }
-        
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 25px 8%;
-            background: rgba(10,10,10,0.95);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 100;
-        }
-        
-        .logo {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 28px;
-            font-weight: 600;
-        }
-        
-        .logo span { color: var(--gold); }
-        
-        .navbar ul {
-            display: flex;
-            list-style: none;
-            gap: 40px;
-        }
-        
-        .navbar a, .navbar li {
-            color: #e5e5e5;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        .button {
-            background: var(--gold);
-            color: #0a0a0a;
-            padding: 12px 28px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        
-        .hero {
-            padding: 180px 8% 120px;
-            display: flex;
-            align-items: center;
-            gap: 5%;
-            min-height: 100vh;
-        }
-        
-        .hero h1 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 4.5rem;
-            line-height: 1.1;
-            margin-bottom: 25px;
-        }
-        
-        .hero p {
-            font-size: 1.4rem;
-            max-width: 500px;
-            margin-bottom: 40px;
-        }
-        
-        .primary {
-            background: var(--gold);
-            color: #0a0a0a;
-            padding: 18px 40px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-size: 1.1rem;
-            font-weight: 600;
-        }
-        
-        .solutions {
-            padding: 100px 8%;
-            background: #111;
-        }
-        
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 25px;
-            margin-top: 60px;
-        }
-        
-        .card {
-            background: #1a1a1a;
-            padding: 35px 25px;
-            border-radius: 12px;
-            text-align: center;
-        }
-        
-        footer {
-            background: #0a0a0a;
-            padding: 60px 8% 40px;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 40px;
-        }
-    </style>
+
+    <title>Alpha Banking</title>
+
+    <meta name="description"
+        content="Uma experiência financeira inteligente, segura e exclusiva.">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
+
 <body>
 
-<header>
-    <nav class="navbar">
-        <div class="logo">ALPHA <span>Banking</span></div>
-        <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Soluções</a></li>
-            <li><a href="#">Cartões</a></li>
-            <li><a href="#">Investimentos</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-        <a href="#" class="button">Abra sua conta</a>
-    </nav>
-</header>
+    <!-- ========================================================= -->
+    <!-- HEADER -->
+    <!-- ========================================================= -->
 
-<section class="hero">
-    <div class="hero-content">
-        <h1>O futuro<br>do banking<br>é Alpha.</h1>
-        <p>Uma experiência financeira elegante, segura e exclusiva.</p>
-        <a href="#" class="primary">Abrir Conta →</a>
-    </div>
-    <div>
-        <!-- Imagem temporária -->
-        <p style="font-size: 5rem; opacity: 0.1;">💳</p>
-    </div>
-</section>
+    <header class="header">
 
-<section class="solutions">
-    <h2 style="text-align:center; font-size: 2.8rem; margin-bottom: 20px;">Tudo o que você precisa, em um só lugar.</h2>
-    <div class="grid">
-        <div class="card"><h3>Conta Digital</h3><p>100% online</p></div>
-        <div class="card"><h3>Cartões</h3><p>Exclusivos</p></div>
-        <div class="card"><h3>Investimentos</h3><p>Alta performance</p></div>
-        <div class="card"><h3>Crédito</h3><p>Inteligente</p></div>
-        <div class="card"><h3>Segurança</h3><p>Proteção Premium</p></div>
-    </div>
-</section>
+        <div class="container">
 
-<footer>
-    <div>
-        <h3>Alpha Banking</h3>
-    </div>
-    <div>
-        <a href="#">Sobre</a> | 
-        <a href="#">Produtos</a> | 
-        <a href="#">Suporte</a> | 
-        <a href="#">Legal</a>
-    </div>
-</footer>
+            <a href="#" class="logo">
+
+                <span class="logo__title">ALPHA</span>
+                <span class="logo__subtitle">BANKING</span>
+
+            </a>
+
+            <nav class="navigation">
+
+                <ul class="navigation__menu">
+
+                    <li><a href="#about">Sobre</a></li>
+
+                    <li><a href="#solutions">Soluções</a></li>
+
+                    <li><a href="#cards">Cartões</a></li>
+
+                    <li><a href="#investments">Investimentos</a></li>
+
+                    <li><a href="#contact">Contato</a></li>
+
+                </ul>
+
+            </nav>
+
+            <a href="#" class="button button--primary">
+
+                Abra sua conta
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- HERO -->
+    <!-- ========================================================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="container hero__grid">
+
+                <article class="hero__content">
+
+                    <h1>
+
+                        O futuro<br>
+                        do banking<br>
+                        é Alpha.
+
+                    </h1>
+
+                    <p>
+
+                        Uma experiência financeira inteligente,
+                        segura e exclusiva para você ir além.
+
+                    </p>
+
+                    <a href="#" class="button button--outline">
+
+                        Abra sua conta
+
+                    </a>
+
+                </article>
+
+                <aside class="hero__visual">
+
+                    <figure class="hero__cards">
+
+                        <img
+                            src="assets/images/cards.png"
+                            alt="Cartões Alpha Banking">
+
+                    </figure>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- SOLUTIONS -->
+        <!-- ========================================================= -->
+
+        <section
+            id="solutions"
+            class="solutions">
+
+            <div class="container">
+
+                <header class="section-header">
+
+                    <span>Soluções</span>
+
+                    <h2>
+
+                        Tudo o que você precisa,
+                        em um só lugar.
+
+                    </h2>
+
+                </header>
+
+                <div class="solutions__grid">
+
+                    <article class="solution-card">
+
+                        <div class="solution-card__icon"></div>
+
+                        <h3>Conta Digital</h3>
+
+                        <p>
+
+                            Abertura rápida,
+                            simples e totalmente online.
+
+                        </p>
+
+                    </article>
+
+                    <article class="solution-card">
+
+                        <div class="solution-card__icon"></div>
+
+                        <h3>Cartões Exclusivos</h3>
+
+                        <p>
+
+                            Benefícios premium para o seu estilo.
+
+                        </p>
+
+                    </article>
+
+                    <article class="solution-card">
+
+                        <div class="solution-card__icon"></div>
+
+                        <h3>Investimentos</h3>
+
+                        <p>
+
+                            Crescimento inteligente
+                            do patrimônio.
+
+                        </p>
+
+                    </article>
+
+                    <article class="solution-card">
+
+                        <div class="solution-card__icon"></div>
+
+                        <h3>Crédito Inteligente</h3>
+
+                        <p>
+
+                            Condições flexíveis
+                            para seus objetivos.
+
+                        </p>
+
+                    </article>
+
+                    <article class="solution-card">
+
+                        <div class="solution-card__icon"></div>
+
+                        <h3>Segurança</h3>
+
+                        <p>
+
+                            Proteção avançada
+                            para seus dados.
+
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- EXPERIENCE -->
+        <!-- ========================================================= -->
+
+        <section class="experience">
+
+            <div class="container experience__grid">
+
+                <article>
+
+                    <span>Experiência Alpha</span>
+
+                    <h2>
+
+                        Inteligência que acompanha
+                        seu ritmo.
+
+                    </h2>
+
+                    <p>
+
+                        Uma plataforma intuitiva,
+                        elegante e poderosa.
+
+                    </p>
+
+                    <div class="stats">
+
+                        <div>
+
+                            <strong>2.5M+</strong>
+
+                            <span>Clientes</span>
+
+                        </div>
+
+                        <div>
+
+                            <strong>R$ 8.7B</strong>
+
+                            <span>Transacionados</span>
+
+                        </div>
+
+                        <div>
+
+                            <strong>98.7%</strong>
+
+                            <span>Satisfação</span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <figure>
+
+                    <img
+                        src="assets/images/app.png"
+                        alt="Aplicativo Alpha">
+
+                </figure>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- SECURITY -->
+        <!-- ========================================================= -->
+
+        <section class="security">
+
+            <div class="container">
+
+                <header class="section-header">
+
+                    <span>Confiança</span>
+
+                    <h2>
+
+                        Segurança é nosso compromisso.
+
+                    </h2>
+
+                </header>
+
+                <div class="security__grid">
+
+                    <article>
+
+                        <h3>Banco Central</h3>
+
+                        <p>Autorizado</p>
+
+                    </article>
+
+                    <article>
+
+                        <h3>PCI DSS</h3>
+
+                        <p>Certificado</p>
+
+                    </article>
+
+                    <article>
+
+                        <h3>ISO 27001</h3>
+
+                        <p>Segurança da Informação</p>
+
+                    </article>
+
+                    <article>
+
+                        <h3>Criptografia</h3>
+
+                        <p>Dados Protegidos</p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- CTA -->
+        <!-- ========================================================= -->
+
+        <section class="cta">
+
+            <div class="container">
+
+                <h2>
+
+                    Chegou a hora de viver
+                    o melhor do banking.
+
+                </h2>
+
+                <a href="#" class="button button--primary">
+
+                    Abra sua conta
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ========================================================= -->
+    <!-- FOOTER -->
+    <!-- ========================================================= -->
+
+    <footer class="footer">
+
+        <div class="container footer__grid">
+
+            <div>
+
+                <h3>ALPHA</h3>
+
+                <small>Banking</small>
+
+            </div>
+
+            <nav>
+
+                <h4>Sobre</h4>
+
+                <ul>
+
+                    <li><a href="#">Quem somos</a></li>
+
+                    <li><a href="#">Carreiras</a></li>
+
+                    <li><a href="#">Imprensa</a></li>
+
+                </ul>
+
+            </nav>
+
+            <nav>
+
+                <h4>Produtos</h4>
+
+                <ul>
+
+                    <li><a href="#">Conta Digital</a></li>
+
+                    <li><a href="#">Cartões</a></li>
+
+                    <li><a href="#">Investimentos</a></li>
+
+                </ul>
+
+            </nav>
+
+            <nav>
+
+                <h4>Suporte</h4>
+
+                <ul>
+
+                    <li><a href="#">Central de Ajuda</a></li>
+
+                    <li><a href="#">Contato</a></li>
+
+                    <li><a href="#">Ouvidoria</a></li>
+
+                </ul>
+
+            </nav>
+
+            <nav>
+
+                <h4>Legal</h4>
+
+                <ul>
+
+                    <li><a href="#">Privacidade</a></li>
+
+                    <li><a href="#">Termos de Uso</a></li>
+
+                    <li><a href="#">Segurança</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </footer>
 
 </body>
+
 </html>
