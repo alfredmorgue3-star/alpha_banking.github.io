@@ -4205,3 +4205,459 @@ section{
         forwards;
 
 }
+/*==================================================
+  97 BADGE COMPONENT
+==================================================*/
+
+.badge{
+
+    --badge-bg:rgba(255,255,255,.05);
+    --badge-color:var(--gold);
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    min-height:38px;
+
+    padding:0 18px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:var(--badge-bg);
+
+    color:var(--badge-color);
+
+    font-size:.76rem;
+
+    font-weight:600;
+
+    letter-spacing:.18em;
+
+    text-transform:uppercase;
+
+    backdrop-filter:blur(18px);
+
+    transition:var(--transition);
+
+}
+
+.badge:hover{
+
+    background:rgba(197,163,106,.12);
+
+    transform:translateY(-2px);
+
+}
+
+
+
+/*==================================================
+  98 CHIP
+==================================================*/
+
+.chip{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:var(--transition);
+
+}
+
+.chip:hover{
+
+    border-color:rgba(197,163,106,.24);
+
+}
+
+.chip__dot{
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:var(--gold);
+
+}
+
+
+
+/*==================================================
+  99 METRIC CARD
+==================================================*/
+
+.metric{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:34px;
+
+    border-radius:30px;
+
+    background:var(--surface-primary);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(22px);
+
+    transition:var(--transition);
+
+}
+
+.metric:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--elevation-4);
+
+}
+
+.metric__value{
+
+    display:block;
+
+    margin-bottom:12px;
+
+    font-family:var(--font-title);
+
+    font-size:3rem;
+
+    color:var(--white);
+
+}
+
+.metric__label{
+
+    color:var(--gray-400);
+
+}
+
+.metric__trend{
+
+    position:absolute;
+
+    top:28px;
+
+    right:28px;
+
+    color:#6fdc93;
+
+}
+
+
+
+/*==================================================
+ 100 FEATURE PANEL
+==================================================*/
+
+.feature-panel{
+
+    position:relative;
+
+    padding:48px;
+
+    border-radius:36px;
+
+    overflow:hidden;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.05),
+            rgba(255,255,255,.025)
+        );
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.feature-panel::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:0;
+
+    background:
+
+        radial-gradient(
+
+            circle at top right,
+
+            rgba(197,163,106,.18),
+
+            transparent 55%
+
+        );
+
+    transition:.8s;
+
+}
+
+.feature-panel:hover::before{
+
+    opacity:1;
+
+}
+
+
+
+/*==================================================
+ 101 PROFILE CARD
+==================================================*/
+
+.profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.profile__avatar{
+
+    width:68px;
+
+    height:68px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    border:2px solid rgba(255,255,255,.08);
+
+}
+
+.profile__avatar img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.profile__content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:6px;
+
+}
+
+
+
+/*==================================================
+ 102 AVATAR STACK
+==================================================*/
+
+.avatar-stack{
+
+    display:flex;
+
+}
+
+.avatar-stack img{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    border:3px solid var(--background-primary);
+
+    margin-left:-14px;
+
+}
+
+.avatar-stack img:first-child{
+
+    margin-left:0;
+
+}
+
+
+
+/*==================================================
+ 103 ICON BUTTON
+==================================================*/
+
+.icon-button{
+
+    width:54px;
+
+    height:54px;
+
+    display:grid;
+
+    place-items:center;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:var(--transition);
+
+}
+
+.icon-button:hover{
+
+    background:rgba(197,163,106,.12);
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/*==================================================
+ 104 DIVIDER DECORATIVE
+==================================================*/
+
+.divider-gold{
+
+    width:120px;
+
+    height:1px;
+
+    margin:40px 0;
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            transparent,
+
+            var(--gold),
+
+            transparent
+
+        );
+
+}
+
+
+
+/*==================================================
+ 105 STATUS TAG
+==================================================*/
+
+.status{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:.82rem;
+
+    color:var(--gray-300);
+
+}
+
+.status::before{
+
+    content:"";
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#34d27b;
+
+    box-shadow:
+
+        0 0 12px rgba(52,210,123,.6);
+
+}
+
+
+
+/*==================================================
+ 106 LOADING SKELETON
+==================================================*/
+
+.skeleton{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.05);
+
+}
+
+.skeleton::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    transform:translateX(-100%);
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            transparent,
+
+            rgba(255,255,255,.12),
+
+            transparent
+
+        );
+
+    animation:
+
+        shimmer
+
+        1.8s
+
+        infinite;
+
+}
