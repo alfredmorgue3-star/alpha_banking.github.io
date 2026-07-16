@@ -3607,3 +3607,601 @@ section{
     max-width:1200px;
 
 }
+/*==================================================
+  84 MOTION ENGINE
+==================================================*/
+
+:root{
+
+    --motion-fast:180ms;
+
+    --motion-base:320ms;
+
+    --motion-medium:550ms;
+
+    --motion-slow:900ms;
+
+    --motion-extra:1400ms;
+
+}
+
+
+
+/*==================================================
+  85 EASING LIBRARY
+==================================================*/
+
+:root{
+
+    --ease-standard:
+        cubic-bezier(.20,0,0,1);
+
+    --ease-decelerate:
+        cubic-bezier(0,.55,.45,1);
+
+    --ease-accelerate:
+        cubic-bezier(.55,0,1,.45);
+
+    --ease-emphasized:
+        cubic-bezier(.16,1,.30,1);
+
+    --ease-elastic:
+        cubic-bezier(.2,1.2,.4,1);
+
+}
+
+
+
+/*==================================================
+  86 FADE SYSTEM
+==================================================*/
+
+@keyframes fade-in{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes fade-out{
+
+    from{
+
+        opacity:1;
+
+    }
+
+    to{
+
+        opacity:0;
+
+    }
+
+}
+
+
+
+/*==================================================
+  87 SLIDE SYSTEM
+==================================================*/
+
+@keyframes slide-up{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(70px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+@keyframes slide-down{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(-70px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+@keyframes slide-left{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateX(-70px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateX(0);
+
+    }
+
+}
+
+@keyframes slide-right{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateX(70px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateX(0);
+
+    }
+
+}
+
+
+
+/*==================================================
+  88 SCALE SYSTEM
+==================================================*/
+
+@keyframes scale-up{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            scale(.85);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            scale(1);
+
+    }
+
+}
+
+@keyframes scale-down{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            scale(1.12);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            scale(1);
+
+    }
+
+}
+
+
+
+/*==================================================
+  89 SHIMMER
+==================================================*/
+
+@keyframes shimmer{
+
+    from{
+
+        transform:
+            translateX(-180%)
+            rotate(24deg);
+
+    }
+
+    to{
+
+        transform:
+            translateX(260%)
+            rotate(24deg);
+
+    }
+
+}
+
+.shimmer{
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.shimmer::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-40%;
+
+    width:30%;
+
+    background:
+
+        linear-gradient(
+
+            transparent,
+
+            rgba(255,255,255,.24),
+
+            transparent
+
+        );
+
+    animation:
+
+        shimmer
+
+        2.8s
+
+        linear
+
+        infinite;
+
+}
+
+
+
+/*==================================================
+  90 GLOW PULSE
+==================================================*/
+
+@keyframes glow-pulse{
+
+    0%{
+
+        box-shadow:
+
+            0 0 0 rgba(197,163,106,.0);
+
+    }
+
+    50%{
+
+        box-shadow:
+
+            0 0 70px rgba(197,163,106,.24);
+
+    }
+
+    100%{
+
+        box-shadow:
+
+            0 0 0 rgba(197,163,106,.0);
+
+    }
+
+}
+
+.glow{
+
+    animation:
+
+        glow-pulse
+
+        3.5s
+
+        ease-in-out
+
+        infinite;
+
+}
+
+
+
+/*==================================================
+  91 GRADIENT FLOW
+==================================================*/
+
+@keyframes gradient-flow{
+
+    0%{
+
+        background-position:0 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0 50%;
+
+    }
+
+}
+
+.gradient-flow{
+
+    background-size:250% 250%;
+
+    animation:
+
+        gradient-flow
+
+        8s
+
+        linear
+
+        infinite;
+
+}
+
+
+
+/*==================================================
+  92 FLOATING OBJECTS
+==================================================*/
+
+@keyframes floating-soft{
+
+    0%{
+
+        transform:
+            translateY(0);
+
+    }
+
+    50%{
+
+        transform:
+            translateY(-14px);
+
+    }
+
+    100%{
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+.float{
+
+    animation:
+
+        floating-soft
+
+        7s
+
+        ease-in-out
+
+        infinite;
+
+}
+
+
+
+/*==================================================
+  93 SPOTLIGHT
+==================================================*/
+
+.spotlight{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.spotlight::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    left:var(--mouse-x,50%);
+
+    top:var(--mouse-y,50%);
+
+    transform:
+
+        translate(-50%,-50%);
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(255,255,255,.10),
+
+            transparent 70%
+
+        );
+
+    pointer-events:none;
+
+    opacity:0;
+
+    transition:
+
+        opacity .45s;
+
+}
+
+.spotlight:hover::after{
+
+    opacity:1;
+
+}
+
+
+
+/*==================================================
+  94 BUTTON RIPPLE
+==================================================*/
+
+.button{
+
+    position:relative;
+
+    overflow:hidden;
+
+    isolation:isolate;
+
+}
+
+.button::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:
+
+        rgba(255,255,255,.25);
+
+    transform:
+
+        scale(0);
+
+    opacity:0;
+
+    transition:
+
+        transform .8s,
+
+        opacity .8s;
+
+}
+
+.button:active::after{
+
+    transform:
+
+        scale(45);
+
+    opacity:1;
+
+}
+
+
+
+/*==================================================
+  95 MAGNETIC HOVER
+==================================================*/
+
+.magnetic{
+
+    transition:
+
+        transform .45s var(--ease-emphasized);
+
+}
+
+.magnetic:hover{
+
+    transform:
+
+        translateY(-6px)
+        scale(1.03);
+
+}
+
+
+
+/*==================================================
+  96 TEXT REVEAL
+==================================================*/
+
+.text-reveal{
+
+    overflow:hidden;
+
+}
+
+.text-reveal span{
+
+    display:inline-block;
+
+    transform:
+
+        translateY(110%);
+
+    animation:
+
+        slide-up
+
+        .9s
+
+        forwards;
+
+}
