@@ -3084,11 +3084,526 @@ section{
     }
 
 }
---duration-1
---duration-2
---duration-3
+/*==================================================
+  75 ADVANCED DESIGN TOKENS
+==================================================*/
 
---ease-standard
---ease-decelerate
---ease-accelerate
---ease-emphasized
+:root{
+
+    /*----------------------------------
+      Semantic Colors
+    ----------------------------------*/
+
+    --surface-primary:
+        rgba(255,255,255,.045);
+
+    --surface-secondary:
+        rgba(255,255,255,.035);
+
+    --surface-tertiary:
+        rgba(255,255,255,.025);
+
+    --surface-hover:
+        rgba(255,255,255,.075);
+
+    --surface-active:
+        rgba(255,255,255,.095);
+
+    --surface-gold:
+        rgba(197,163,106,.12);
+
+    --surface-green:
+        rgba(30,70,56,.14);
+
+
+
+    /*----------------------------------
+      Overlay System
+    ----------------------------------*/
+
+    --overlay-1:
+        rgba(0,0,0,.10);
+
+    --overlay-2:
+        rgba(0,0,0,.20);
+
+    --overlay-3:
+        rgba(0,0,0,.35);
+
+    --overlay-4:
+        rgba(0,0,0,.50);
+
+    --overlay-5:
+        rgba(0,0,0,.72);
+
+
+
+    /*----------------------------------
+      Elevation
+    ----------------------------------*/
+
+    --elevation-1:
+        0 2px 8px rgba(0,0,0,.08);
+
+    --elevation-2:
+        0 8px 18px rgba(0,0,0,.12);
+
+    --elevation-3:
+        0 20px 40px rgba(0,0,0,.18);
+
+    --elevation-4:
+        0 32px 80px rgba(0,0,0,.28);
+
+    --elevation-5:
+        0 60px 160px rgba(0,0,0,.42);
+
+
+
+    /*----------------------------------
+      Inner Shadow
+    ----------------------------------*/
+
+    --inner-shadow-sm:
+
+        inset
+        0 1px 1px
+        rgba(255,255,255,.08);
+
+    --inner-shadow-lg:
+
+        inset
+        0 8px 30px
+        rgba(255,255,255,.04);
+
+
+
+    /*----------------------------------
+      Blur System
+    ----------------------------------*/
+
+    --blur-xs:4px;
+
+    --blur-sm:8px;
+
+    --blur-md:16px;
+
+    --blur-lg:28px;
+
+    --blur-xl:42px;
+
+    --blur-2xl:60px;
+
+    --blur-3xl:80px;
+
+
+
+    /*----------------------------------
+      Radius System
+    ----------------------------------*/
+
+    --radius-2xs:4px;
+
+    --radius-xs:8px;
+
+    --radius-sm:12px;
+
+    --radius-md:18px;
+
+    --radius-lg:24px;
+
+    --radius-xl:36px;
+
+    --radius-2xl:52px;
+
+    --radius-3xl:72px;
+
+    --radius-full:999px;
+
+
+
+    /*----------------------------------
+      Motion
+    ----------------------------------*/
+
+    --duration-fast:.18s;
+
+    --duration-base:.35s;
+
+    --duration-medium:.55s;
+
+    --duration-slow:.85s;
+
+    --duration-slower:1.2s;
+
+
+
+    /*----------------------------------
+      Easing
+    ----------------------------------*/
+
+    --ease-standard:
+
+        cubic-bezier(
+            .2,
+            0,
+            0,
+            1
+        );
+
+    --ease-emphasized:
+
+        cubic-bezier(
+            .16,
+            1,
+            .3,
+            1
+        );
+
+    --ease-smooth:
+
+        cubic-bezier(
+            .22,
+            .61,
+            .36,
+            1
+        );
+
+}
+
+
+
+/*==================================================
+  76 FLUID TYPOGRAPHY
+==================================================*/
+
+:root{
+
+    --text-xs:
+
+        clamp(
+            .72rem,
+            .70rem + .12vw,
+            .82rem
+        );
+
+    --text-sm:
+
+        clamp(
+            .88rem,
+            .84rem + .20vw,
+            1rem
+        );
+
+    --text-base:
+
+        clamp(
+            1rem,
+            .95rem + .24vw,
+            1.15rem
+        );
+
+    --text-lg:
+
+        clamp(
+            1.25rem,
+            1.12rem + .55vw,
+            1.7rem
+        );
+
+    --text-xl:
+
+        clamp(
+            1.8rem,
+            1.5rem + 1vw,
+            2.8rem
+        );
+
+    --display-sm:
+
+        clamp(
+            2.8rem,
+            4vw,
+            4rem
+        );
+
+    --display-md:
+
+        clamp(
+            4rem,
+            6vw,
+            6rem
+        );
+
+    --display-lg:
+
+        clamp(
+            5rem,
+            8vw,
+            8rem
+        );
+
+}
+
+
+
+/*==================================================
+  77 GRID ENGINE
+==================================================*/
+
+.grid-2{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(
+            2,
+            minmax(0,1fr)
+        );
+
+    gap:32px;
+
+}
+
+.grid-3{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(
+            3,
+            minmax(0,1fr)
+        );
+
+    gap:32px;
+
+}
+
+.grid-4{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(
+            4,
+            minmax(0,1fr)
+        );
+
+    gap:32px;
+
+}
+
+.grid-6{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(
+            6,
+            minmax(0,1fr)
+        );
+
+    gap:24px;
+
+}
+
+.grid-12{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(
+            12,
+            minmax(0,1fr)
+        );
+
+    gap:32px;
+
+}
+
+
+
+/*==================================================
+  78 AUTO GRID
+==================================================*/
+
+.auto-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(
+
+            auto-fit,
+
+            minmax(
+                320px,
+                1fr
+            )
+
+        );
+
+    gap:40px;
+
+}
+
+
+
+/*==================================================
+  79 FLEX UTILITIES
+==================================================*/
+
+.flex{
+
+    display:flex;
+
+}
+
+.flex-center{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.flex-between{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.flex-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.flex-wrap{
+
+    flex-wrap:wrap;
+
+}
+
+
+
+/*==================================================
+  80 STACK LAYOUT
+==================================================*/
+
+.stack-xs>*+*{
+
+    margin-top:8px;
+
+}
+
+.stack-sm>*+*{
+
+    margin-top:16px;
+
+}
+
+.stack-md>*+*{
+
+    margin-top:24px;
+
+}
+
+.stack-lg>*+*{
+
+    margin-top:40px;
+
+}
+
+.stack-xl>*+*{
+
+    margin-top:64px;
+
+}
+
+
+
+/*==================================================
+  81 CLUSTER LAYOUT
+==================================================*/
+
+.cluster{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+
+
+/*==================================================
+  82 SIDEBAR LAYOUT
+==================================================*/
+
+.sidebar-layout{
+
+    display:grid;
+
+    grid-template-columns:
+
+        340px
+
+        minmax(0,1fr);
+
+    gap:56px;
+
+}
+
+
+
+/*==================================================
+  83 CONTENT WIDTH
+==================================================*/
+
+.content-xs{
+
+    max-width:480px;
+
+}
+
+.content-sm{
+
+    max-width:640px;
+
+}
+
+.content-md{
+
+    max-width:760px;
+
+}
+
+.content-lg{
+
+    max-width:960px;
+
+}
+
+.content-xl{
+
+    max-width:1200px;
+
+}
