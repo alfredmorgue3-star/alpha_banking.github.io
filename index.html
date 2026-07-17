@@ -57,57 +57,168 @@
 
     </header>
 
+<!-- ========================================================= -->
+<!-- HERO -->
+<!-- ========================================================= -->
 
-    <!-- ========================================================= -->
-    <!-- HERO -->
-    <!-- ========================================================= -->
+<main id="main-content">
 
-    <main>
+    <section
+        id="hero"
+        class="hero"
+        aria-labelledby="hero-title">
 
-        <section class="hero">
+        <!-- Background Layers -->
 
-            <div class="container hero__grid">
+        <div class="hero__background" aria-hidden="true">
+
+            <div class="hero__gradient"></div>
+
+            <div class="hero__noise"></div>
+
+            <div class="hero__lines"></div>
+
+            <div class="hero__glow"></div>
+
+        </div>
+
+        <div class="container">
+
+            <div class="hero__grid">
+
+                <!-- ================================================= -->
+                <!-- Editorial Content -->
+                <!-- ================================================= -->
 
                 <article class="hero__content">
 
-                    <h1>
+                    <span class="hero__eyebrow">
 
-                        O futuro<br>
-                        do banking<br>
-                        é Alpha.
+                        Alpha Banking
+
+                    </span>
+
+                    <h1
+                        id="hero-title"
+                        class="hero__title">
+
+                        O futuro
+                        <br>
+                        do banking
+                        <br>
+                        é <strong>Alpha.</strong>
 
                     </h1>
 
-                    <p>
+                    <p class="hero__description">
 
                         Uma experiência financeira inteligente,
-                        segura e exclusiva para você ir além.
+                        segura e exclusiva para quem busca
+                        simplicidade, performance e confiança.
 
                     </p>
 
-                    <a href="#" class="button button--outline">
+                    <div class="hero__actions">
 
-                        Abra sua conta
+                        <a
+                            href="#account"
+                            class="button button--primary">
 
-                    </a>
+                            <span>Abrir conta</span>
+
+                        </a>
+
+                        <a
+                            href="#solutions"
+                            class="button button--ghost">
+
+                            <span>Conheça as soluções</span>
+
+                        </a>
+
+                    </div>
+
+                    <ul class="hero__highlights">
+
+                        <li>100% Digital</li>
+
+                        <li>Cartões Premium</li>
+
+                        <li>Investimentos Inteligentes</li>
+
+                    </ul>
 
                 </article>
 
-                <aside class="hero__visual">
+                <!-- ================================================= -->
+                <!-- Visual Composition -->
+                <!-- ================================================= -->
 
-                    <figure class="hero__cards">
+                <aside
+                    class="hero__visual"
+                    aria-label="Apresentação dos cartões Alpha">
+
+                    <figure class="hero__figure">
 
                         <img
-                            src="assets/images/cards.png"
-                            alt="Cartões Alpha Banking">
+                            src="assets/images/cards.webp"
+                            alt="Cartões Alpha Banking nas versões Black e Gold"
+                            class="hero__image"
+                            width="900"
+                            height="900"
+                            loading="eager"
+                            fetchpriority="high">
 
                     </figure>
+
+                    <article class="hero__badge">
+
+                        <span class="hero__badge-icon">
+
+                            🌐
+
+                        </span>
+
+                        <div>
+
+                            <strong>
+
+                                Global Fintech 100
+
+                            </strong>
+
+                            <p>
+
+                                Entre as fintechs mais inovadoras
+                                do mundo.
+
+                            </p>
+
+                        </div>
+
+                    </article>
 
                 </aside>
 
             </div>
 
-        </section>
+        </div>
+
+        <!-- Scroll Indicator -->
+
+        <a
+            href="#solutions"
+            class="hero__scroll"
+            aria-label="Ir para a próxima seção">
+
+            <span></span>
+
+        </a>
+
+    </section>
+
+</main>
+
 
         <!-- ========================================================= -->
         <!-- SOLUTIONS -->
