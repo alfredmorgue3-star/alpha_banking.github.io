@@ -16,49 +16,162 @@
 </head>
 
 <body>
+<!-- ========================================================= -->
+<!-- HEADER -->
+<!-- ========================================================= -->
 
-    <!-- ========================================================= -->
-    <!-- HEADER -->
-    <!-- ========================================================= -->
+<header
+    class="header"
+    id="header"
+    role="banner">
 
-    <header class="header">
+    <div class="header__background"></div>
 
-        <div class="container">
+    <div class="header__blur"></div>
 
-            <a href="#" class="logo">
+    <div class="container">
 
-                <span class="logo__title">ALPHA</span>
-                <span class="logo__subtitle">BANKING</span>
+        <div class="header__wrapper">
+
+            <!-- ========================= -->
+            <!-- BRAND -->
+            <!-- ========================= -->
+
+            <a
+                href="/"
+                class="logo"
+                aria-label="Alpha Banking">
+
+                <span class="logo__title">
+
+                    ALPHA
+
+                </span>
+
+                <span class="logo__subtitle">
+
+                    BANKING
+
+                </span>
 
             </a>
 
-            <nav class="navigation">
+            <!-- ========================= -->
+            <!-- NAVIGATION -->
+            <!-- ========================= -->
 
-                <ul class="navigation__menu">
+            <nav
+                class="navigation"
+                aria-label="Navegação principal">
 
-                    <li><a href="#about">Sobre</a></li>
+                <ul
+                    class="navigation__menu"
+                    role="list">
 
-                    <li><a href="#solutions">Soluções</a></li>
+                    <li class="navigation__item">
 
-                    <li><a href="#cards">Cartões</a></li>
+                        <a
+                            href="#about"
+                            class="navigation__link">
 
-                    <li><a href="#investments">Investimentos</a></li>
+                            Sobre
 
-                    <li><a href="#contact">Contato</a></li>
+                        </a>
+
+                    </li>
+
+                    <li class="navigation__item">
+
+                        <a
+                            href="#solutions"
+                            class="navigation__link">
+
+                            Soluções
+
+                        </a>
+
+                    </li>
+
+                    <li class="navigation__item">
+
+                        <a
+                            href="#cards"
+                            class="navigation__link">
+
+                            Cartões
+
+                        </a>
+
+                    </li>
+
+                    <li class="navigation__item">
+
+                        <a
+                            href="#investments"
+                            class="navigation__link">
+
+                            Investimentos
+
+                        </a>
+
+                    </li>
+
+                    <li class="navigation__item">
+
+                        <a
+                            href="#contact"
+                            class="navigation__link">
+
+                            Contato
+
+                        </a>
+
+                    </li>
 
                 </ul>
 
             </nav>
 
-            <a href="#" class="button button--primary">
+            <!-- ========================= -->
+            <!-- ACTIONS -->
+            <!-- ========================= -->
 
-                Abra sua conta
+            <div class="header__actions">
 
-            </a>
+                <a
+                    href="#"
+                    class="button button--primary magnetic">
+
+                    Abra sua conta
+
+                </a>
+
+            </div>
+
+            <!-- ========================= -->
+            <!-- MOBILE TOGGLE -->
+            <!-- ========================= -->
+
+            <button
+                class="navigation-toggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="mobile-navigation">
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+            </button>
 
         </div>
 
-    </header>
+    </div>
+
+</header>
 
     <!-- ========================================================= -->
     <!-- HERO -->
@@ -743,159 +856,3 @@
         </div>
 
     </footer>
-<!-- ========================================================= -->
-<!-- HEADER -->
-<!-- ========================================================= -->
-
-<header
-    class="header"
-    id="header"
-    role="banner">
-
-    <div class="header__background"></div>
-
-    <div class="header__blur"></div>
-
-    <div class="container">
-
-        <div class="header__wrapper">
-
-            <!-- ========================= -->
-            <!-- BRAND -->
-            <!-- ========================= -->
-
-            <a
-                href="/"
-                class="logo"
-                aria-label="Alpha Banking">
-
-                <span class="logo__title">
-
-                    ALPHA
-
-                </span>
-
-                <span class="logo__subtitle">
-
-                    BANKING
-
-                </span>
-
-            </a>
-
-            <!-- ========================= -->
-            <!-- NAVIGATION -->
-            <!-- ========================= -->
-
-            <nav
-                class="navigation"
-                aria-label="Navegação principal">
-
-                <ul
-                    class="navigation__menu"
-                    role="list">
-
-                    <li class="navigation__item">
-
-                        <a
-                            href="#about"
-                            class="navigation__link">
-
-                            Sobre
-
-                        </a>
-
-                    </li>
-
-                    <li class="navigation__item">
-
-                        <a
-                            href="#solutions"
-                            class="navigation__link">
-
-                            Soluções
-
-                        </a>
-
-                    </li>
-
-                    <li class="navigation__item">
-
-                        <a
-                            href="#cards"
-                            class="navigation__link">
-
-                            Cartões
-
-                        </a>
-
-                    </li>
-
-                    <li class="navigation__item">
-
-                        <a
-                            href="#investments"
-                            class="navigation__link">
-
-                            Investimentos
-
-                        </a>
-
-                    </li>
-
-                    <li class="navigation__item">
-
-                        <a
-                            href="#contact"
-                            class="navigation__link">
-
-                            Contato
-
-                        </a>
-
-                    </li>
-
-                </ul>
-
-            </nav>
-
-            <!-- ========================= -->
-            <!-- ACTIONS -->
-            <!-- ========================= -->
-
-            <div class="header__actions">
-
-                <a
-                    href="#"
-                    class="button button--primary magnetic">
-
-                    Abra sua conta
-
-                </a>
-
-            </div>
-
-            <!-- ========================= -->
-            <!-- MOBILE TOGGLE -->
-            <!-- ========================= -->
-
-            <button
-                class="navigation-toggle"
-                type="button"
-                aria-label="Abrir menu"
-                aria-expanded="false"
-                aria-controls="mobile-navigation">
-
-                <span></span>
-
-                <span></span>
-
-                <span></span>
-
-            </button>
-
-        </div>
-
-    </div>
-
-</header>
