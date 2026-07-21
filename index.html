@@ -59,23 +59,31 @@
 <!-- ========================================================= -->
 <!-- HERO -->
 <!-- ========================================================= -->
-<section class="hero">
+
+<section
+    class="hero"
+    aria-labelledby="hero-title">
 
     <div class="container">
 
         <div class="hero__grid">
 
-             <!-- ============================================= -->
-            <!-- Editorial -->
-            <!-- ============================================= -->
 
-            <article
-                class="hero__content fade-left">
+            <!-- ================================================= -->
+            <!-- HERO CONTENT -->
+            <!-- ================================================= -->
+
+            <article class="hero__content fade-left">
+
+                <!-- Linha editorial -->
 
                 <div
                     class="hero__line"
                     aria-hidden="true">
                 </div>
+
+
+                <!-- Badge -->
 
                 <div class="hero__badge">
 
@@ -93,38 +101,85 @@
 
                     </svg>
 
-                    Private Digital Banking
+                    <span>
+                        Private Digital Banking
+                    </span>
 
                 </div>
 
-                <header class="stack-lg">
 
-                    <h1
+                <!-- Editorial Heading -->
 
-                        <span>O futuro</span><br>
+                <header class="hero__heading">
 
-                        <span>do banking</span><br>
+                    <h1 id="hero-title">
 
-                        <span>é Alpha.</span>
+                        <span>
+                            O futuro
+                        </span>
+
+                        <span>
+                            do banking
+                        </span>
+
+                        <span>
+                            é Alpha.
+                        </span>
 
                     </h1>
 
-                    <p class="content-sm">
+                </header>
 
-                        Plataforma financeira concebida para quem
-                        procura discrição, performance e uma experiência
-                        cuidadosamente desenhada em cada detalhe.
+
+                <!-- Description -->
+
+                <p class="hero__description content-sm">
+
+                    Plataforma financeira concebida para quem
+                    procura discrição, performance e uma experiência
+                    cuidadosamente desenhada em cada detalhe.
 
                 </p>
 
+
+                <!-- Actions -->
+
                 <div class="hero__actions">
 
-                    <a href="#" class="button button--primary">
-                        Abra sua conta
+                    <a
+                        href="#"
+                        class="button button--primary magnetic">
+
+                        <span>
+                            Abra sua conta
+                        </span>
+
+                        <svg
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            aria-hidden="true">
+
+                            <path d="M5 12h14"/>
+
+                            <path d="M13 6l6 6-6 6"/>
+
+                        </svg>
+
                     </a>
 
-                    <a href="#" class="button button--outline">
-                        Explorar
+
+                    <a
+                        href="#solutions"
+                        class="button button--outline">
+
+                        <span>
+                            Explorar
+                        </span>
+
                     </a>
 
                 </div>
@@ -132,49 +187,93 @@
             </article>
 
 
-            <!-- Cena -->
-            <aside class="hero__visual">
+
+            <!-- ================================================= -->
+            <!-- HERO VISUAL -->
+            <!-- ================================================= -->
+
+            <aside
+                class="hero__visual"
+                aria-label="Experiência Alpha Banking">
+
+
+                <!-- Atmospheric Elements -->
+
+                <div
+                    class="hero__visual-orbit"
+                    aria-hidden="true">
+                </div>
+
+
+                <div
+                    class="hero__visual-glow"
+                    aria-hidden="true">
+                </div>
+
+
+                <!-- Cards -->
 
                 <figure class="hero__cards">
 
                     <img
                         src="assets/images/cards.webp"
-                        alt="Alpha Cards">
+                        alt="Cartões premium Alpha Banking"
+                        loading="eager"
+                        fetchpriority="high">
 
                 </figure>
 
 
-                <!-- Painel flutuante -->
+                <!-- ================================================= -->
+                <!-- RECOGNITION PANEL -->
+                <!-- ================================================= -->
 
-                <article class="hero-award glass">
+                <article
+                    class="hero-award glass">
 
-                    <span class="badge">
+                    <div class="hero-award__header">
 
-                        Reconhecimento
+                        <span class="badge">
 
-                    </span>
+                            <span class="status"></span>
 
-                    <h3>
+                            Reconhecimento
 
-                        Global<br>
-                        Fintech 1000
+                        </span>
 
-                    </h3>
+                    </div>
 
-                    <p>
 
-                        Alpha Banking íntegra
-                        entre as Empresas Financeiras
-                        mais inovadoras.
+                    <div class="hero-award__content">
 
-                    </p>
+                        <h3>
+
+                            Global
+                            <br>
+                            Fintech 1000
+
+                        </h3>
+
+                        <p>
+
+                            Alpha Banking integra
+                            uma nova geração de empresas
+                            financeiras inovadoras.
+
+                        </p>
+
+                    </div>
 
                 </article>
 
 
-                <!-- Estatística -->
 
-                <article class="hero-metric metric">
+                <!-- ================================================= -->
+                <!-- METRIC -->
+                <!-- ================================================= -->
+
+                <article
+                    class="hero-metric metric">
 
                     <span class="metric__value">
 
@@ -184,11 +283,20 @@
 
                     <span class="metric__label">
 
-                        Clientes
+                        Clientes Alpha
+
+                    </span>
+
+                    <span class="hero-metric__indicator">
+
+                        <span></span>
+
+                        Crescimento contínuo
 
                     </span>
 
                 </article>
+
 
             </aside>
 
