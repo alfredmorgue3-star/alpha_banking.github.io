@@ -209,158 +209,99 @@
 <!-- HERO CARDS — HTML COMPOSITION -->
 <!-- ========================================================= -->
 
-<figure
-    class="hero__cards"
-    aria-label="Cartões premium Alpha Banking">
+<figure class="hero__cards" aria-label="Cartões Alpha Banking">
 
-    <div class="hero-card-scene">
+    <!-- Aura de luz -->
+    <div class="hero__cards-glow" aria-hidden="true"></div>
 
-        <!-- ================================================= -->
-        <!-- CARTÃO TRASEIRO -->
-        <!-- ================================================= -->
+    <!-- Cartão traseiro -->
+    <article class="bank-card bank-card--back">
 
-        <article
-            class="bank-card bank-card--back"
-            aria-hidden="true">
+        <div class="bank-card__top">
+            <span class="bank-card__brand">
+                ALPHA
+            </span>
 
-            <div class="bank-card__shine"></div>
+            <span class="bank-card__type">
+                PRIVATE
+            </span>
+        </div>
 
-            <div class="bank-card__top">
+        <div class="bank-card__chip"></div>
 
-                <span class="bank-card__brand">
-                    ALPHA
-                </span>
+        <div class="bank-card__number">
+            5412&nbsp;&nbsp;••••&nbsp;&nbsp;••••&nbsp;&nbsp;8921
+        </div>
 
-                <span class="bank-card__edition">
-                    PRIVATE
-                </span>
+        <div class="bank-card__bottom">
 
-            </div>
+            <span>
+                ALPHA MEMBER
+            </span>
 
-            <div class="bank-card__chip"></div>
+            <span>
+                09/30
+            </span>
 
-            <div class="bank-card__number">
-                01&nbsp;&nbsp; 24&nbsp;&nbsp; 68&nbsp;&nbsp; 92
-            </div>
+        </div>
 
-            <div class="bank-card__bottom">
-
-                <span>
-                    ALPHA BANKING
-                </span>
-
-                <span>
-                    SIGNATURE
-                </span>
-
-            </div>
-
-        </article>
+    </article>
 
 
-        <!-- ================================================= -->
-        <!-- CARTÃO PRINCIPAL -->
-        <!-- ================================================= -->
+    <!-- Cartão principal -->
+    <article class="bank-card bank-card--front">
 
-        <article class="bank-card bank-card--front">
+        <div class="bank-card__top">
 
-            <div class="bank-card__shine"></div>
+            <span class="bank-card__brand">
+                ALPHA
+            </span>
 
-            <div class="bank-card__texture"></div>
+            <span class="bank-card__type">
+                SIGNATURE
+            </span>
 
-            <header class="bank-card__top">
+        </div>
 
-                <span class="bank-card__brand">
-                    ALPHA
-                </span>
+        <div class="bank-card__chip"></div>
 
-                <span class="bank-card__edition">
-                    PRIVATE BANKING
-                </span>
+        <div class="bank-card__number">
+            5412&nbsp;&nbsp;••••&nbsp;&nbsp;••••&nbsp;&nbsp;2048
+        </div>
 
-            </header>
+        <div class="bank-card__bottom">
 
+            <span>
+                ALPHA BANKING
+            </span>
 
-            <div class="bank-card__middle">
+            <span>
+                09/30
+            </span>
 
-                <div class="bank-card__chip">
+        </div>
 
-                    <span></span>
-                    <span></span>
-                    <span></span>
-
-                </div>
-
-                <div class="bank-card__contactless">
-
-                    <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true">
-
-                        <path
-                            d="M8 8.5C10.8 11.3 10.8 12.7 8 15.5"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="1.4"
-                            stroke-linecap="round"/>
-
-                        <path
-                            d="M11 5.5C15.8 10.3 15.8 13.7 11 18.5"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="1.4"
-                            stroke-linecap="round"/>
-
-                    </svg>
-
-                </div>
-
-            </div>
+    </article>
 
 
-            <div class="bank-card__number">
+    <!-- Cartão vertical -->
+    <article class="bank-card bank-card--vertical">
 
-                4821&nbsp;&nbsp; 9034&nbsp;&nbsp; 7621&nbsp;&nbsp; 1840
+        <div class="bank-card__vertical-brand">
+            A
+        </div>
 
-            </div>
+        <div class="bank-card__vertical-label">
+            PRIVATE
+        </div>
+
+    </article>
 
 
-            <footer class="bank-card__bottom">
-
-                <div>
-
-                    <small>
-                        CARDHOLDER
-                    </small>
-
-                    <strong>
-                        ALPHA MEMBER
-                    </strong>
-
-                </div>
-
-                <div>
-
-                    <small>
-                        VALID THRU
-                    </small>
-
-                    <strong>
-                        12/30
-                    </strong>
-
-                </div>
-
-                <span class="bank-card__mark">
-                    α
-                </span>
-
-            </footer>
-
-        </article>
-
+    <!-- Reflexo decorativo -->
+    <div
+        class="hero__cards-reflection"
+        aria-hidden="true">
     </div>
 
 </figure>
