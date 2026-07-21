@@ -4661,3 +4661,612 @@ section{
         infinite;
 
 }
+/*==================================================
+  HERO CARD SYSTEM
+==================================================*/
+
+.hero__cards{
+
+    position:relative;
+
+    width:
+        min(
+            700px,
+            58vw
+        );
+
+    aspect-ratio:
+        1 / 1;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    perspective:
+        1600px;
+
+}
+
+
+/*==================================================
+  CARD SCENE
+==================================================*/
+
+.hero-card-scene{
+
+    position:relative;
+
+    width:100%;
+
+    height:100%;
+
+    transform-style:
+        preserve-3d;
+
+}
+
+
+/*==================================================
+  BANK CARD
+==================================================*/
+
+.bank-card{
+
+    position:absolute;
+
+    width:460px;
+
+    aspect-ratio:
+        1.586 / 1;
+
+    border-radius:
+        28px;
+
+    overflow:hidden;
+
+    padding:
+        30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    color:var(--white);
+
+    transform-style:
+        preserve-3d;
+
+    box-shadow:
+
+        0 60px 120px
+        rgba(0,0,0,.55),
+
+        0 20px 40px
+        rgba(0,0,0,.25);
+
+}
+
+
+/*==================================================
+  CARD — BACK
+==================================================*/
+
+.bank-card--back{
+
+    top:12%;
+
+    left:2%;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #1b1b1b,
+            #080808
+        );
+
+    border:
+
+        1px solid
+        rgba(255,255,255,.10);
+
+    transform:
+
+        translateZ(-100px)
+
+        rotateZ(-12deg)
+
+        rotateY(14deg);
+
+    opacity:.72;
+
+}
+
+
+/*==================================================
+  CARD — FRONT
+==================================================*/
+
+.bank-card--front{
+
+    top:27%;
+
+    left:17%;
+
+    z-index:5;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #202020 0%,
+            #111111 42%,
+            #080808 100%
+        );
+
+    border:
+
+        1px solid
+        rgba(255,255,255,.16);
+
+    transform:
+
+        translateZ(100px)
+
+        rotateZ(-5deg)
+
+        rotateY(-8deg);
+
+    transition:
+
+        transform
+        1.2s
+        var(--ease-emphasized);
+
+}
+
+
+/*==================================================
+  CARD HOVER
+==================================================*/
+
+.hero__cards:hover
+.bank-card--front{
+
+    transform:
+
+        translateZ(140px)
+
+        rotateZ(-2deg)
+
+        rotateY(-3deg)
+
+        translateY(-12px);
+
+}
+
+
+/*==================================================
+  CARD TEXTURE
+==================================================*/
+
+.bank-card__texture{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    opacity:.12;
+
+    background:
+
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(255,255,255,.5),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 80% 80%,
+            rgba(197,163,106,.4),
+            transparent 35%
+        );
+
+    mix-blend-mode:
+        screen;
+
+}
+
+
+/*==================================================
+  CARD SHINE
+==================================================*/
+
+.bank-card__shine{
+
+    position:absolute;
+
+    inset:-100%;
+
+    width:45%;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.12),
+            transparent
+        );
+
+    transform:
+        rotate(25deg)
+        translateX(-250%);
+
+    transition:
+        transform
+        1.4s
+        var(--ease-emphasized);
+
+    pointer-events:none;
+
+}
+
+
+.hero__cards:hover
+.bank-card__shine{
+
+    transform:
+        rotate(25deg)
+        translateX(500%);
+
+}
+
+
+/*==================================================
+  CARD TOP
+==================================================*/
+
+.bank-card__top{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    justify-content:space-between;
+
+}
+
+
+.bank-card__brand{
+
+    font-family:
+        var(--font-title);
+
+    font-size:
+        1.7rem;
+
+    letter-spacing:
+        .22em;
+
+}
+
+
+.bank-card__edition{
+
+    font-family:
+        var(--font-body);
+
+    font-size:
+        .55rem;
+
+    letter-spacing:
+        .18em;
+
+    color:
+        var(--gold-light);
+
+    text-transform:
+        uppercase;
+
+}
+
+
+/*==================================================
+  CARD MIDDLE
+==================================================*/
+
+.bank-card__middle{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+
+/*==================================================
+  CHIP
+==================================================*/
+
+.bank-card__chip{
+
+    width:54px;
+
+    height:40px;
+
+    border-radius:10px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #e0c68d,
+            #9b7545
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,.35);
+
+    box-shadow:
+
+        inset
+        0 1px
+        rgba(255,255,255,.45),
+
+        0 8px 20px
+        rgba(0,0,0,.25);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+.bank-card__chip::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent 48%,
+            rgba(80,50,20,.5) 49%,
+            transparent 51%
+        ),
+
+        linear-gradient(
+            0deg,
+            transparent 48%,
+            rgba(80,50,20,.5) 49%,
+            transparent 51%
+        );
+
+}
+
+
+/*==================================================
+  CONTACTLESS
+==================================================*/
+
+.bank-card__contactless{
+
+    color:
+        rgba(255,255,255,.65);
+
+    transform:
+        rotate(90deg);
+
+}
+
+
+/*==================================================
+  CARD NUMBER
+==================================================*/
+
+.bank-card__number{
+
+    position:relative;
+
+    z-index:2;
+
+    font-family:
+        var(--font-body);
+
+    font-size:
+        1.15rem;
+
+    letter-spacing:
+        .20em;
+
+    color:
+        rgba(255,255,255,.88);
+
+}
+
+
+/*==================================================
+  CARD BOTTOM
+==================================================*/
+
+.bank-card__bottom{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    align-items:flex-end;
+
+    justify-content:space-between;
+
+}
+
+
+.bank-card__bottom div{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:5px;
+
+}
+
+
+.bank-card__bottom small{
+
+    font-size:
+        .48rem;
+
+    letter-spacing:
+        .16em;
+
+    color:
+        var(--gray-500);
+
+}
+
+
+.bank-card__bottom strong{
+
+    font-size:
+        .65rem;
+
+    font-weight:
+        500;
+
+    letter-spacing:
+        .12em;
+
+}
+
+
+.bank-card__mark{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    border:
+        1px solid
+        rgba(197,163,106,.5);
+
+    color:
+        var(--gold);
+
+    font-family:
+        var(--font-title);
+
+    font-size:
+        1.5rem;
+
+}
+
+
+/*==================================================
+  CARD ATMOSPHERE
+==================================================*/
+
+.hero__cards::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:600px;
+
+    height:600px;
+
+    left:50%;
+
+    top:50%;
+
+    transform:
+        translate(-50%,-50%);
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(197,163,106,.16),
+            transparent 68%
+        );
+
+    filter:
+        blur(50px);
+
+    z-index:-2;
+
+}
+
+
+/*==================================================
+  CARD REFLECTION
+==================================================*/
+
+.hero__cards::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:120px;
+
+    left:50%;
+
+    bottom:5%;
+
+    transform:
+        translateX(-50%);
+
+    background:
+
+        radial-gradient(
+            ellipse,
+            rgba(0,0,0,.7),
+            transparent 70%
+        );
+
+    filter:
+        blur(25px);
+
+    z-index:-3;
+
+}
