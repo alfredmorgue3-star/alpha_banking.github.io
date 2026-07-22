@@ -4662,72 +4662,41 @@ section{
 
 }
 /*==================================================
-  HERO CARD SYSTEM
+  HERO CARDS — HTML COMPOSITION
 ==================================================*/
 
 .hero__cards{
 
     position:relative;
 
-    width:
-        min(
-            700px,
-            58vw
-        );
+    width:min(100%, 620px);
 
-    aspect-ratio:
-        1 / 1;
+    height:620px;
 
-    display:flex;
+    display:block;
 
-    align-items:center;
-
-    justify-content:center;
-
-    perspective:
-        1600px;
+    isolation:isolate;
 
 }
 
 
 /*==================================================
-  CARD SCENE
-==================================================*/
-
-.hero-card-scene{
-
-    position:relative;
-
-    width:100%;
-
-    height:100%;
-
-    transform-style:
-        preserve-3d;
-
-}
-
-
-/*==================================================
-  BANK CARD
+  CARD BASE
 ==================================================*/
 
 .bank-card{
 
     position:absolute;
 
-    width:460px;
+    width:380px;
 
-    aspect-ratio:
-        1.586 / 1;
+    aspect-ratio:1.586 / 1;
 
-    border-radius:
-        28px;
+    padding:32px;
+
+    border-radius:26px;
 
     overflow:hidden;
-
-    padding:
-        30px;
 
     display:flex;
 
@@ -4737,194 +4706,169 @@ section{
 
     color:var(--white);
 
-    transform-style:
-        preserve-3d;
+    border:1px solid
+        rgba(255,255,255,.16);
 
     box-shadow:
 
-        0 60px 120px
-        rgba(0,0,0,.55),
+        0 50px 100px
+        rgba(0,0,0,.45),
 
-        0 20px 40px
-        rgba(0,0,0,.25);
+        inset 0 1px
+        rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    transform-style:preserve-3d;
+
+    will-change:transform;
 
 }
 
 
 /*==================================================
-  CARD — BACK
+  CARD FRONT
+==================================================*/
+
+.bank-card--front{
+
+    z-index:3;
+
+    top:50%;
+
+    left:50%;
+
+    transform:
+
+        translate(-50%,-50%)
+
+        rotate(-8deg)
+
+        translateY(-8px);
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            #1b1b1b 0%,
+
+            #0b0b0b 48%,
+
+            #18140e 100%
+
+        );
+
+    animation:
+
+        cardFloatFront
+
+        7s
+
+        ease-in-out
+
+        infinite;
+
+}
+
+
+/*==================================================
+  CARD BACK
 ==================================================*/
 
 .bank-card--back{
 
-    top:12%;
+    z-index:2;
 
-    left:2%;
+    top:43%;
 
-    background:
-
-        linear-gradient(
-            145deg,
-            #1b1b1b,
-            #080808
-        );
-
-    border:
-
-        1px solid
-        rgba(255,255,255,.10);
+    left:50%;
 
     transform:
 
-        translateZ(-100px)
+        translate(-50%,-50%)
 
-        rotateZ(-12deg)
+        translateX(80px)
 
-        rotateY(14deg);
-
-    opacity:.72;
-
-}
-
-
-/*==================================================
-  CARD — FRONT
-==================================================*/
-
-.bank-card--front{
-
-    top:27%;
-
-    left:17%;
-
-    z-index:5;
+        rotate(8deg);
 
     background:
 
         linear-gradient(
+
             135deg,
-            #202020 0%,
-            #111111 42%,
-            #080808 100%
+
+            #15231e,
+
+            #0b1210
+
         );
 
-    border:
+    opacity:.92;
 
-        1px solid
-        rgba(255,255,255,.16);
+    animation:
 
-    transform:
+        cardFloatBack
 
-        translateZ(100px)
+        8s
 
-        rotateZ(-5deg)
+        ease-in-out
 
-        rotateY(-8deg);
-
-    transition:
-
-        transform
-        1.2s
-        var(--ease-emphasized);
+        infinite;
 
 }
 
 
 /*==================================================
-  CARD HOVER
+  VERTICAL CARD
 ==================================================*/
 
-.hero__cards:hover
-.bank-card--front{
+.bank-card--vertical{
 
-    transform:
+    z-index:4;
 
-        translateZ(140px)
+    width:170px;
 
-        rotateZ(-2deg)
+    aspect-ratio:.62 / 1;
 
-        rotateY(-3deg)
+    top:52%;
 
-        translateY(-12px);
+    right:2%;
 
-}
+    padding:24px;
 
-
-/*==================================================
-  CARD TEXTURE
-==================================================*/
-
-.bank-card__texture{
-
-    position:absolute;
-
-    inset:0;
-
-    pointer-events:none;
-
-    opacity:.12;
-
-    background:
-
-        radial-gradient(
-            circle at 20% 20%,
-            rgba(255,255,255,.5),
-            transparent 30%
-        ),
-
-        radial-gradient(
-            circle at 80% 80%,
-            rgba(197,163,106,.4),
-            transparent 35%
-        );
-
-    mix-blend-mode:
-        screen;
-
-}
-
-
-/*==================================================
-  CARD SHINE
-==================================================*/
-
-.bank-card__shine{
-
-    position:absolute;
-
-    inset:-100%;
-
-    width:45%;
+    border-radius:22px;
 
     background:
 
         linear-gradient(
-            90deg,
-            transparent,
-            rgba(255,255,255,.12),
-            transparent
+
+            145deg,
+
+            var(--gold-light),
+
+            var(--gold-dark)
+
         );
 
-    transform:
-        rotate(25deg)
-        translateX(-250%);
-
-    transition:
-        transform
-        1.4s
-        var(--ease-emphasized);
-
-    pointer-events:none;
-
-}
-
-
-.hero__cards:hover
-.bank-card__shine{
+    color:#111;
 
     transform:
-        rotate(25deg)
-        translateX(500%);
+
+        rotate(16deg);
+
+    animation:
+
+        cardFloatVertical
+
+        6s
+
+        ease-in-out
+
+        infinite;
 
 }
 
@@ -4935,15 +4879,15 @@ section{
 
 .bank-card__top{
 
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
     position:relative;
 
     z-index:2;
-
-    display:flex;
-
-    align-items:flex-start;
-
-    justify-content:space-between;
 
 }
 
@@ -4951,52 +4895,25 @@ section{
 .bank-card__brand{
 
     font-family:
+
         var(--font-title);
 
-    font-size:
-        1.7rem;
+    font-size:1.4rem;
 
-    letter-spacing:
-        .22em;
+    letter-spacing:.18em;
 
 }
 
 
-.bank-card__edition{
+.bank-card__type{
 
-    font-family:
-        var(--font-body);
+    font-size:.55rem;
 
-    font-size:
-        .55rem;
+    letter-spacing:.22em;
 
-    letter-spacing:
-        .18em;
+    text-transform:uppercase;
 
-    color:
-        var(--gold-light);
-
-    text-transform:
-        uppercase;
-
-}
-
-
-/*==================================================
-  CARD MIDDLE
-==================================================*/
-
-.bank-card__middle{
-
-    position:relative;
-
-    z-index:2;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:space-between;
+    opacity:.6;
 
 }
 
@@ -5007,103 +4924,55 @@ section{
 
 .bank-card__chip{
 
-    width:54px;
+    width:48px;
 
-    height:40px;
+    height:36px;
 
-    border-radius:10px;
+    border-radius:8px;
+
+    margin-top:auto;
+
+    margin-bottom:20px;
 
     background:
 
         linear-gradient(
-            135deg,
-            #e0c68d,
-            #9b7545
-        );
 
-    border:
-        1px solid
-        rgba(255,255,255,.35);
+            135deg,
+
+            #e0c38b,
+
+            #9c7845
+
+        );
 
     box-shadow:
 
-        inset
-        0 1px
-        rgba(255,255,255,.45),
-
-        0 8px 20px
-        rgba(0,0,0,.25);
-
-    position:relative;
-
-    overflow:hidden;
-
-}
-
-
-.bank-card__chip::before{
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    background:
-
-        linear-gradient(
-            90deg,
-            transparent 48%,
-            rgba(80,50,20,.5) 49%,
-            transparent 51%
-        ),
-
-        linear-gradient(
-            0deg,
-            transparent 48%,
-            rgba(80,50,20,.5) 49%,
-            transparent 51%
-        );
+        inset 0 1px
+        rgba(255,255,255,.5);
 
 }
 
 
 /*==================================================
-  CONTACTLESS
-==================================================*/
-
-.bank-card__contactless{
-
-    color:
-        rgba(255,255,255,.65);
-
-    transform:
-        rotate(90deg);
-
-}
-
-
-/*==================================================
-  CARD NUMBER
+  NUMBER
 ==================================================*/
 
 .bank-card__number{
 
-    position:relative;
-
-    z-index:2;
-
     font-family:
-        var(--font-body);
 
-    font-size:
-        1.15rem;
+        "Courier New",
 
-    letter-spacing:
-        .20em;
+        monospace;
+
+    font-size:1rem;
+
+    letter-spacing:.12em;
 
     color:
-        rgba(255,255,255,.88);
+
+        rgba(255,255,255,.8);
 
 }
 
@@ -5114,107 +4983,281 @@ section{
 
 .bank-card__bottom{
 
-    position:relative;
-
-    z-index:2;
-
     display:flex;
-
-    align-items:flex-end;
 
     justify-content:space-between;
 
-}
+    align-items:end;
 
+    margin-top:22px;
 
-.bank-card__bottom div{
+    font-size:.55rem;
 
-    display:flex;
+    letter-spacing:.16em;
 
-    flex-direction:column;
-
-    gap:5px;
-
-}
-
-
-.bank-card__bottom small{
-
-    font-size:
-        .48rem;
-
-    letter-spacing:
-        .16em;
-
-    color:
-        var(--gray-500);
-
-}
-
-
-.bank-card__bottom strong{
-
-    font-size:
-        .65rem;
-
-    font-weight:
-        500;
-
-    letter-spacing:
-        .12em;
-
-}
-
-
-.bank-card__mark{
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    width:42px;
-
-    height:42px;
-
-    border-radius:50%;
-
-    border:
-        1px solid
-        rgba(197,163,106,.5);
-
-    color:
-        var(--gold);
-
-    font-family:
-        var(--font-title);
-
-    font-size:
-        1.5rem;
+    opacity:.55;
 
 }
 
 
 /*==================================================
-  CARD ATMOSPHERE
+  VERTICAL CARD
 ==================================================*/
 
-.hero__cards::before{
+.bank-card__vertical-brand{
+
+    font-family:
+
+        var(--font-title);
+
+    font-size:4rem;
+
+    font-weight:500;
+
+}
+
+
+.bank-card__vertical-label{
+
+    writing-mode:
+
+        vertical-rl;
+
+    text-transform:uppercase;
+
+    letter-spacing:.3em;
+
+    font-size:.55rem;
+
+    margin-top:auto;
+
+}
+
+
+/*==================================================
+  CARD LIGHT
+==================================================*/
+
+.bank-card::before{
 
     content:"";
 
     position:absolute;
 
-    width:600px;
+    inset:0;
 
-    height:600px;
+    background:
 
-    left:50%;
+        radial-gradient(
+
+            circle at 20% 10%,
+
+            rgba(255,255,255,.12),
+
+            transparent 35%
+
+        );
+
+    pointer-events:none;
+
+}
+
+
+/*==================================================
+  CARD SHINE
+==================================================*/
+
+.bank-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-100%;
+
+    left:-60%;
+
+    width:40%;
+
+    height:300%;
+
+    transform:rotate(28deg);
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            transparent,
+
+            rgba(255,255,255,.12),
+
+            transparent
+
+        );
+
+    transition:
+
+        transform 1.2s
+        var(--ease-emphasized);
+
+}
+
+.hero__cards:hover
+
+.bank-card::after{
+
+    transform:
+
+        translateX(420%)
+
+        rotate(28deg);
+
+}
+
+
+/*==================================================
+  FLOATING ANIMATIONS
+==================================================*/
+
+@keyframes cardFloatFront{
+
+    0%{
+
+        transform:
+
+            translate(-50%,-50%)
+
+            rotate(-8deg)
+
+            translateY(-8px);
+
+    }
+
+    50%{
+
+        transform:
+
+            translate(-50%,-50%)
+
+            rotate(-5deg)
+
+            translateY(-22px);
+
+    }
+
+    100%{
+
+        transform:
+
+            translate(-50%,-50%)
+
+            rotate(-8deg)
+
+            translateY(-8px);
+
+    }
+
+}
+
+
+@keyframes cardFloatBack{
+
+    0%{
+
+        transform:
+
+            translate(-50%,-50%)
+
+            translateX(80px)
+
+            rotate(8deg);
+
+    }
+
+    50%{
+
+        transform:
+
+            translate(-50%,-50%)
+
+            translateX(80px)
+
+            translateY(-18px)
+
+            rotate(11deg);
+
+    }
+
+    100%{
+
+        transform:
+
+            translate(-50%,-50%)
+
+            translateX(80px)
+
+            rotate(8deg);
+
+    }
+
+}
+
+
+@keyframes cardFloatVertical{
+
+    0%{
+
+        transform:
+
+            rotate(16deg)
+
+            translateY(0);
+
+    }
+
+    50%{
+
+        transform:
+
+            rotate(19deg)
+
+            translateY(-18px);
+
+    }
+
+    100%{
+
+        transform:
+
+            rotate(16deg)
+
+            translateY(0);
+
+    }
+
+}
+
+
+/*==================================================
+  GLOW
+==================================================*/
+
+.hero__cards-glow{
+
+    position:absolute;
+
+    width:520px;
+
+    height:520px;
 
     top:50%;
 
+    left:50%;
+
     transform:
+
         translate(-50%,-50%);
 
     border-radius:50%;
@@ -5222,13 +5265,16 @@ section{
     background:
 
         radial-gradient(
+
             circle,
-            rgba(197,163,106,.16),
+
+            rgba(197,163,106,.20),
+
             transparent 68%
+
         );
 
-    filter:
-        blur(50px);
+    filter:blur(50px);
 
     z-index:-2;
 
@@ -5236,37 +5282,98 @@ section{
 
 
 /*==================================================
-  CARD REFLECTION
+  REFLECTION
 ==================================================*/
 
-.hero__cards::after{
-
-    content:"";
+.hero__cards-reflection{
 
     position:absolute;
 
-    width:420px;
+    width:440px;
 
-    height:120px;
+    height:100px;
 
     left:50%;
 
-    bottom:5%;
+    bottom:8%;
 
     transform:
+
         translateX(-50%);
+
+    border-radius:50%;
 
     background:
 
         radial-gradient(
+
             ellipse,
-            rgba(0,0,0,.7),
+
+            rgba(0,0,0,.5),
+
             transparent 70%
+
         );
 
-    filter:
-        blur(25px);
+    filter:blur(28px);
 
-    z-index:-3;
+    z-index:-1;
+
+}
+
+
+/*==================================================
+  HOVER COMPOSITION
+==================================================*/
+
+.hero__cards:hover
+
+.bank-card--front{
+
+    animation-play-state:paused;
+
+    transform:
+
+        translate(-50%,-50%)
+
+        rotate(-5deg)
+
+        translateY(-28px)
+
+        scale(1.025);
+
+}
+
+
+.hero__cards:hover
+
+.bank-card--back{
+
+    animation-play-state:paused;
+
+    transform:
+
+        translate(-50%,-50%)
+
+        translateX(100px)
+
+        translateY(-18px)
+
+        rotate(11deg);
+
+}
+
+
+.hero__cards:hover
+
+.bank-card--vertical{
+
+    animation-play-state:paused;
+
+    transform:
+
+        rotate(20deg)
+
+        translateY(-25px);
 
 }
