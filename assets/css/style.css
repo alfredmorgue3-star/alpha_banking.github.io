@@ -5326,3 +5326,673 @@ section{
         translateY(-25px);
 
 }
+/*==================================================
+  IPHONE BANKING INTERFACE
+==================================================*/
+
+.banking-app{
+
+    position:relative;
+
+    width:100%;
+
+    height:100%;
+
+    padding:
+
+        16px
+
+        18px
+
+        22px;
+
+    overflow:hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 10%,
+            rgba(197,163,106,.14),
+            transparent 32%
+        ),
+
+        linear-gradient(
+            180deg,
+            #111111 0%,
+            #090909 100%
+        );
+
+    color:var(--white);
+
+    font-family:var(--font-body);
+
+}
+
+
+/*==================================================
+  STATUS BAR
+==================================================*/
+
+.banking-app__statusbar{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:
+
+        2px
+
+        8px
+
+        18px;
+
+    font-size:.72rem;
+
+    font-weight:600;
+
+}
+
+.banking-app__status-icons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:4px;
+
+}
+
+.banking-app__status-icons span{
+
+    display:block;
+
+    width:13px;
+
+    height:6px;
+
+    border-radius:999px;
+
+    background:
+
+        rgba(255,255,255,.75);
+
+}
+
+
+/*==================================================
+  APP HEADER
+==================================================*/
+
+.banking-app__header{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    margin-bottom:24px;
+
+}
+
+.banking-app__header small{
+
+    display:block;
+
+    margin-bottom:5px;
+
+    color:var(--gray-500);
+
+    font-size:.68rem;
+
+}
+
+.banking-app__header h3{
+
+    font-size:1.35rem;
+
+    line-height:1;
+
+    letter-spacing:-.03em;
+
+}
+
+
+.banking-app__avatar{
+
+    width:38px;
+
+    height:38px;
+
+    display:grid;
+
+    place-items:center;
+
+    border-radius:50%;
+
+    color:var(--gold-light);
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(197,163,106,.25),
+            rgba(255,255,255,.04)
+        );
+
+    border:
+
+        1px solid
+
+        rgba(197,163,106,.25);
+
+    font-family:var(--font-title);
+
+    font-size:1.1rem;
+
+}
+
+
+/*==================================================
+  BALANCE
+==================================================*/
+
+.banking-app__balance{
+
+    position:relative;
+
+    padding:24px;
+
+    margin-bottom:16px;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(197,163,106,.18),
+            rgba(255,255,255,.035)
+        );
+
+    border:
+
+        1px solid
+
+        rgba(197,163,106,.18);
+
+    box-shadow:
+
+        inset 0 1px
+
+        rgba(255,255,255,.08);
+
+}
+
+.banking-app__balance::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:150px;
+
+    height:150px;
+
+    right:-60px;
+
+    top:-70px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(223,200,156,.25),
+            transparent 70%
+        );
+
+}
+
+.banking-app__balance span{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:var(--gray-400);
+
+    font-size:.68rem;
+
+}
+
+.banking-app__balance strong{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-family:var(--font-title);
+
+    font-size:1.9rem;
+
+    font-weight:500;
+
+    letter-spacing:-.03em;
+
+}
+
+.banking-app__balance small{
+
+    color:var(--gold-light);
+
+    font-size:.62rem;
+
+}
+
+
+/*==================================================
+  QUICK ACTIONS
+==================================================*/
+
+.banking-app__actions{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(4,1fr);
+
+    gap:8px;
+
+    margin-bottom:18px;
+
+}
+
+.banking-app__actions button{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:7px;
+
+    color:var(--gray-400);
+
+}
+
+.banking-app__action-icon{
+
+    width:42px;
+
+    height:42px;
+
+    display:grid;
+
+    place-items:center;
+
+    border-radius:15px;
+
+    background:
+
+        rgba(255,255,255,.045);
+
+    border:
+
+        1px solid
+
+        rgba(255,255,255,.07);
+
+    color:var(--gold-light);
+
+    font-size:1rem;
+
+}
+
+.banking-app__actions small{
+
+    font-size:.58rem;
+
+}
+
+
+/*==================================================
+  CHART
+==================================================*/
+
+.banking-app__chart{
+
+    padding:18px;
+
+    margin-bottom:18px;
+
+    border-radius:22px;
+
+    background:
+
+        rgba(255,255,255,.035);
+
+    border:
+
+        1px solid
+
+        rgba(255,255,255,.06);
+
+}
+
+.banking-app__section-head{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    margin-bottom:12px;
+
+}
+
+.banking-app__section-head span{
+
+    color:var(--gray-300);
+
+    font-size:.68rem;
+
+}
+
+.banking-app__section-head small{
+
+    color:var(--gray-500);
+
+    font-size:.58rem;
+
+}
+
+.banking-app__chart > strong{
+
+    display:block;
+
+    margin-bottom:12px;
+
+    color:#6fdc93;
+
+    font-size:1.25rem;
+
+    font-weight:500;
+
+}
+
+
+/*==================================================
+  MINI GRAPH
+==================================================*/
+
+.chart{
+
+    height:58px;
+
+    display:flex;
+
+    align-items:flex-end;
+
+    gap:5px;
+
+}
+
+.chart span{
+
+    flex:1;
+
+    min-height:12px;
+
+    border-radius:
+
+        4px 4px 2px 2px;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            var(--gold-light),
+            var(--gold-dark)
+        );
+
+    opacity:.7;
+
+}
+
+.chart span:nth-child(1){
+    height:35%;
+}
+
+.chart span:nth-child(2){
+    height:48%;
+}
+
+.chart span:nth-child(3){
+    height:40%;
+}
+
+.chart span:nth-child(4){
+    height:62%;
+}
+
+.chart span:nth-child(5){
+    height:55%;
+}
+
+.chart span:nth-child(6){
+    height:78%;
+}
+
+.chart span:nth-child(7){
+    height:70%;
+}
+
+.chart span:nth-child(8){
+    height:94%;
+}
+
+
+/*==================================================
+  TRANSACTIONS
+==================================================*/
+
+.banking-app__transactions{
+
+    padding-bottom:72px;
+
+}
+
+.banking-app__transactions
+.banking-app__section-head{
+
+    margin-bottom:14px;
+
+}
+
+.banking-app__section-head a{
+
+    color:var(--gold);
+
+    font-size:.6rem;
+
+}
+
+
+.transaction{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:
+
+        11px
+
+        0;
+
+    border-bottom:
+
+        1px solid
+
+        rgba(255,255,255,.05);
+
+}
+
+.transaction__icon{
+
+    width:34px;
+
+    height:34px;
+
+    flex:none;
+
+    display:grid;
+
+    place-items:center;
+
+    border-radius:11px;
+
+    color:var(--gold-light);
+
+    background:
+
+        rgba(197,163,106,.10);
+
+    font-size:.7rem;
+
+}
+
+.transaction__content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:3px;
+
+    min-width:0;
+
+    flex:1;
+
+}
+
+.transaction__content strong{
+
+    font-size:.65rem;
+
+    font-weight:500;
+
+}
+
+.transaction__content small{
+
+    color:var(--gray-500);
+
+    font-size:.52rem;
+
+}
+
+.transaction__value{
+
+    font-size:.57rem;
+
+    font-weight:500;
+
+    white-space:nowrap;
+
+}
+
+.transaction__value--positive{
+
+    color:#6fdc93;
+
+}
+
+
+/*==================================================
+  BOTTOM NAVIGATION
+==================================================*/
+
+.banking-app__navigation{
+
+    position:absolute;
+
+    left:18px;
+
+    right:18px;
+
+    bottom:12px;
+
+    height:58px;
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(4,1fr);
+
+    align-items:center;
+
+    padding:5px;
+
+    border-radius:20px;
+
+    background:
+
+        rgba(15,15,15,.88);
+
+    border:
+
+        1px solid
+
+        rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+}
+
+.banking-app__navigation a{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:3px;
+
+    color:var(--gray-600);
+
+}
+
+.banking-app__navigation a span{
+
+    font-size:.85rem;
+
+}
+
+.banking-app__navigation a small{
+
+    font-size:.48rem;
+
+}
+
+.banking-app__navigation a.active{
+
+    color:var(--gold-light);
+
+}
