@@ -2113,16 +2113,12 @@ a:hover{
 
 }
 
-.security__grid{
-
-    display:grid;
-
-    grid-template-columns:
-        repeat(4,minmax(0,1fr));
-
-    gap:32px;
-
-    margin-top:80px;
+.security__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: clamp(40px, 6vw, 120px);
+    align-items: center;
+}
 
 }
 
