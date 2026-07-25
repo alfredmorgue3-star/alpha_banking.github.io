@@ -2120,32 +2120,6 @@ a:hover{
     align-items: center;
 }
 
-}
-
-/* ========================================================= */
-/* SECURITY — LAYOUT PROTECTION */
-/* ========================================================= */
-
-.security {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    overflow: hidden;
-}
-
-.security .container {
-    width: min(100% - 80px, 1400px);
-    max-width: 1400px;
-    margin-inline: auto;
-    min-width: 0;
-}
-
-.security__grid {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-}
-
 /*==================================================
   49 SECURITY CARD
 ==================================================*/
