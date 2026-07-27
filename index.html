@@ -61,7 +61,6 @@
 <!-- ========================================================= -->
 
 <section
-    id="hero"
     class="hero"
     aria-labelledby="hero-title">
 
@@ -69,17 +68,22 @@
 
         <div class="hero__grid">
 
-            <!-- ============================================= -->
-            <!-- Editorial -->
-            <!-- ============================================= -->
 
-            <article
-                class="hero__content fade-left">
+            <!-- ================================================= -->
+            <!-- HERO CONTENT -->
+            <!-- ================================================= -->
+
+            <article class="hero__content fade-left">
+
+                <!-- Linha editorial -->
 
                 <div
                     class="hero__line"
                     aria-hidden="true">
                 </div>
+
+
+                <!-- Badge -->
 
                 <div class="hero__badge">
 
@@ -97,15 +101,18 @@
 
                     </svg>
 
-                    Private Digital Banking
+                    <span>
+                        Private Digital Banking
+                    </span>
 
                 </div>
 
-                <header class="stack-lg">
+
+                <!-- Editorial Heading -->
+
+               <header class="stack-lg">
 
                     <h1
-                        id="hero-title"
-                        class="text-reveal">
 
                         <span>O futuro</span><br>
 
@@ -114,32 +121,58 @@
                         <span>é Alpha.</span>
 
                     </h1>
-
-                    <p class="content-sm">
-
-                        Uma plataforma financeira concebida para quem
-                        procura discrição, performance e uma experiência
-                        cuidadosamente desenhada em cada detalhe.
-
-                    </p>
-
+                   
                 </header>
 
-                <div class="cluster">
+
+                <!-- Description -->
+
+                <p class="hero__description content-sm">
+
+                    Plataforma financeira concebida para quem
+                    procura discrição, performance e uma experiência
+                    cuidadosamente desenhada em cada detalhe.
+
+                </p>
+
+
+                <!-- Actions -->
+
+                <div class="hero__actions">
 
                     <a
                         href="#"
                         class="button button--primary magnetic">
 
-                        Abrir Conta
+                        <span>
+                            Abra sua conta
+                        </span>
+
+                        <svg
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            aria-hidden="true">
+
+                            <path d="M5 12h14"/>
+
+                            <path d="M13 6l6 6-6 6"/>
+
+                        </svg>
 
                     </a>
+
 
                     <a
                         href="#solutions"
                         class="button button--outline">
 
-                        Explorar Plataforma
+                        <span>
+                            Explorar
+                        </span>
 
                     </a>
 
@@ -147,285 +180,948 @@
 
             </article>
 
-            <!-- ============================================= -->
-            <!-- Hero Object -->
-            <!-- ============================================= -->
 
-            <figure
-                class="hero__visual zoom">
 
-                <div class="hero__cards float">
-
-                    <img
-                        src="assets/images/cards.webp"
-                        alt="Cartões Alpha Banking"
-                        loading="eager"
-                        fetchpriority="high">
-
-                </div>
-
-            </figure>
-
-            <!-- ============================================= -->
-            <!-- Editorial Aside -->
-            <!-- ============================================= -->
+            <!-- ================================================= -->
+            <!-- HERO VISUAL -->
+            <!-- ================================================= -->
 
             <aside
-                class="hero__aside stack-lg fade-right">
+                class="hero__visual"
+                aria-label="Experiência Alpha Banking">
+
+
+                <!-- Atmospheric Elements -->
+
+                <div
+                    class="hero__visual-orbit"
+                    aria-hidden="true">
+                </div>
+
+
+                <div
+                    class="hero__visual-glow"
+                    aria-hidden="true">
+                </div>
+
+
+              <!-- ========================================================= -->
+<!-- HERO CARDS — HTML COMPOSITION -->
+<!-- ========================================================= -->
+
+<figure class="hero__cards" aria-label="Cartões Alpha Banking">
+
+    <!-- Aura de luz -->
+    <div class="hero__cards-glow" aria-hidden="true"></div>
+
+    <!-- Cartão traseiro -->
+    <article class="bank-card bank-card--back">
+
+        <div class="bank-card__top">
+            <span class="bank-card__brand">
+                ALPHA
+            </span>
+
+            <span class="bank-card__type">
+                PRIVATE
+            </span>
+        </div>
+
+        <div class="bank-card__chip"></div>
+
+        <div class="bank-card__number">
+            5412&nbsp;&nbsp;••••&nbsp;&nbsp;••••&nbsp;&nbsp;8921
+        </div>
+
+        <div class="bank-card__bottom">
+
+            <span>
+                ALPHA MEMBER
+            </span>
+
+            <span>
+                09/30
+            </span>
+
+        </div>
+
+    </article>
+
+
+    <!-- Cartão principal -->
+    <article class="bank-card bank-card--front">
+
+        <div class="bank-card__top">
+
+            <span class="bank-card__brand">
+                ALPHA
+            </span>
+
+            <span class="bank-card__type">
+                SIGNATURE
+            </span>
+
+        </div>
+
+        <div class="bank-card__chip"></div>
+
+        <div class="bank-card__number">
+            5412&nbsp;&nbsp;••••&nbsp;&nbsp;••••&nbsp;&nbsp;2048
+        </div>
+
+        <div class="bank-card__bottom">
+
+            <span>
+                ALPHA MEMBER
+            </span>
+
+            <span>
+                09/30
+            </span>
+
+        </div>
+
+    </article>
+
+
+    <!-- Reflexo decorativo -->
+    <div
+        class="hero__cards-reflection"
+        aria-hidden="true">
+    </div>
+
+</figure>
+
+                <!-- ================================================= -->
+                <!-- RECOGNITION PANEL -->
+                <!-- ================================================= -->
 
                 <article
-                    class="feature-panel glass lift">
+                    class="hero-award glass">
 
-                    <span class="badge">
+                    <div class="hero-award__header">
 
-                        Reconhecimento
+                        <span class="badge">
+                
+                            Reconhecimento
 
-                    </span>
+                        </span>
 
-                    <div
-                        class="divider-gold"
-                        aria-hidden="true">
                     </div>
 
-                    <h3>
 
-                        Global<br>
-                        Fintech 100
+                    <div class="hero-award__content">
 
-                    </h3>
+                        <h3>
 
-                    <p>
+                            Global
+                            <br>
+                            Fintech 1000
 
-                        Reconhecida entre as empresas
-                        financeiras mais inovadoras
-                        pela excelência em experiência,
-                        segurança e tecnologia.
+                        </h3>
 
-                    </p>
+                        <p>
+
+                           
+
+                        </p>
+
+                    </div>
 
                 </article>
 
+
+
+                <!-- ================================================= -->
+                <!-- METRIC -->
+                <!-- ================================================= -->
+
                 <article
-                    class="metric magnetic">
+                    class="hero-metric metric">
 
                     <span class="metric__value">
 
-                        2.5M+
+                     +1.5K
 
                     </span>
 
                     <span class="metric__label">
 
-                        Clientes ativos
+                        Clientes Alpha
 
                     </span>
 
-                    <span class="metric__trend">
+                    <span class="hero-metric__indicator">
 
-                        +18%
-
-                    </span>
-
-                </article>
-
-                <article
-                    class="metric magnetic">
-
-                    <span class="metric__value">
-
-                        R$ 8.7B
-
-                    </span>
-
-                    <span class="metric__label">
-
-                        Património administrado
-
+                        <span></span>
+                    
+                      
                     </span>
 
                 </article>
+
 
             </aside>
 
         </div>
 
     </div>
+    
+</section>
+<!-- ========================================================= -->
+<!-- SOLUTIONS -->
+<!-- ========================================================= -->
+
+<section
+    id="solutions"
+    class="solutions"
+    aria-labelledby="solutions-title">
+
+    <div class="container">
+
+        <!-- SECTION HEADER -->
+
+        <header class="section-header">
+
+            <span>
+                Soluções
+            </span>
+
+            <h2 id="solutions-title">
+
+                Tudo o que você precisa,
+                em um só lugar.
+
+            </h2>
+
+            <p>
+
+                Um ecossistema financeiro desenhado para
+                acompanhar cada etapa da sua vida,
+                com inteligência, segurança e simplicidade.
+
+            </p>
+
+        </header>
+
+
+        <!-- SOLUTIONS GRID -->
+
+        <div class="solutions__grid">
+
+
+            <!-- CARD 01 -->
+
+            <article class="solution-card">
+
+                <div class="shine"></div>
+
+                <span class="solution-card__number">
+                    01
+                </span>
+
+                <span class="solution-card__tag">
+                    Banking
+                </span>
+
+                <div class="solution-card__icon">
+
+                    <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        aria-hidden="true">
+
+                        <rect
+                            x="3"
+                            y="5"
+                            width="18"
+                            height="14"
+                            rx="2"/>
+
+                        <path d="M3 10h18"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>
+                    Conta Digital
+                </h3>
+
+                <p>
+
+                    Abertura rápida, gestão intuitiva
+                    e controle financeiro em tempo real.
+
+                </p>
+
+                <a href="#">
+
+                    Explorar
+
+                    <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        aria-hidden="true">
+
+                        <path d="M5 12h14"/>
+                        <path d="M13 6l6 6-6 6"/>
+
+                    </svg>
+
+                </a>
+
+            </article>
+
+
+            <!-- CARD 02 -->
+
+            <article class="solution-card">
+
+                <div class="shine"></div>
+
+                <span class="solution-card__number">
+                    02
+                </span>
+
+                <span class="solution-card__tag">
+                    Premium
+                </span>
+
+                <div class="solution-card__icon">
+
+                    <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        aria-hidden="true">
+
+                        <rect
+                            x="3"
+                            y="5"
+                            width="18"
+                            height="14"
+                            rx="2"/>
+
+                        <path d="M3 10h18"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>
+                    Cartões Exclusivos
+                </h3>
+
+                <p>
+
+                    Benefícios premium, experiências
+                    internacionais e liberdade para viver mais.
+
+                </p>
+
+                <a href="#">
+
+                    Descobrir
+
+                    <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5">
+
+                        <path d="M5 12h14"/>
+                        <path d="M13 6l6 6-6 6"/>
+
+                    </svg>
+
+                </a>
+
+            </article>
+
+
+            <!-- CARD 03 -->
+
+            <article class="solution-card">
+
+                <div class="shine"></div>
+
+                <span class="solution-card__number">
+                    03
+                </span>
+
+                <span class="solution-card__tag">
+                    Wealth
+                </span>
+
+                <div class="solution-card__icon">
+
+                    <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        aria-hidden="true">
+
+                        <path d="M4 19V9"/>
+                        <path d="M10 19V5"/>
+                        <path d="M16 19v-7"/>
+                        <path d="M22 19V3"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>
+                    Investimentos
+                </h3>
+
+                <p>
+
+                    Estratégias inteligentes para construir,
+                    proteger e expandir seu patrimônio.
+
+                </p>
+
+                <a href="#">
+
+                    Investir
+
+                    <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5">
+
+                        <path d="M5 12h14"/>
+                        <path d="M13 6l6 6-6 6"/>
+
+                    </svg>
+
+                </a>
+
+            </article>
+
+
+            <!-- CARD 04 -->
+
+            <article class="solution-card">
+
+                <div class="shine"></div>
+
+                <span class="solution-card__number">
+                    04
+                </span>
+
+                <span class="solution-card__tag">
+                    Credit
+                </span>
+
+                <div class="solution-card__icon">
+
+                    <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        aria-hidden="true">
+
+                        <path d="M12 3v18"/>
+                        <path d="M17 7.5c0-1.7-2.2-3-5-3s-5 1.3-5 3
+                                 2.2 3 5 3 5 1.3 5 3-2.2 3-5 3-5-1.3-5-3"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>
+                    Crédito Inteligente
+                </h3>
+
+                <p>
+
+                    Soluções flexíveis e personalizadas
+                    para transformar seus próximos planos.
+
+                </p>
+
+                <a href="#">
+
+                    Conhecer
+
+                    <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5">
+
+                        <path d="M5 12h14"/>
+                        <path d="M13 6l6 6-6 6"/>
+
+                    </svg>
+
+                </a>
+
+            </article>
+
+
+            <!-- CARD 05 -->
+
+            <article class="solution-card">
+
+                <div class="shine"></div>
+
+                <span class="solution-card__number">
+                    05
+                </span>
+
+                <span class="solution-card__tag">
+                    Protection
+                </span>
+
+                <div class="solution-card__icon">
+
+                    <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        aria-hidden="true">
+
+                        <path d="M12 3l7 3v5c0 4.5-3 7.5-7 10
+                                 -4-2.5-7-5.5-7-10V6l7-3z"/>
+
+                        <path d="M9 12l2 2 4-4"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>
+                    Segurança
+                </h3>
+
+                <p>
+
+                    Proteção avançada, tecnologia inteligente
+                    e monitoramento contínuo dos seus dados.
+
+                </p>
+
+                <a href="#">
+
+                    Saiba mais
+
+                    <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5">
+
+                        <path d="M5 12h14"/>
+                        <path d="M13 6l6 6-6 6"/>
+
+                    </svg>
+
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
 
 </section>
+<!-- ========================================================= -->
+<!-- EXPERIENCE -->
+<!-- ========================================================= -->
 
-        <!-- ========================================================= -->
-        <!-- SOLUTIONS -->
-        <!-- ========================================================= -->
+<section
+    class="experience"
+    id="experience"
+    aria-labelledby="experience-title">
 
-        <section
-            id="solutions"
-            class="solutions">
+    <!-- Elementos decorativos -->
 
-            <div class="container">
+    <div
+        class="parallax-dot one"
+        aria-hidden="true">
+    </div>
 
-                <header class="section-header">
+    <div
+        class="parallax-dot two"
+        aria-hidden="true">
+    </div>
 
-                    <span>Soluções</span>
+    <div
+        class="parallax-dot three"
+        aria-hidden="true">
+    </div>
 
-                    <h2>
 
-                        Tudo o que você precisa,
-                        em um só lugar.
+    <div class="container experience__grid">
 
-                    </h2>
 
-                </header>
+        <!-- ================================================= -->
+        <!-- CONTENT -->
+        <!-- ================================================= -->
 
-                <div class="solutions__grid">
+        <article class="experience__content">
 
-                    <article class="solution-card">
+            <span class="experience__eyebrow">
 
-                        <div class="solution-card__icon"></div>
+                <i aria-hidden="true"></i>
 
-                        <h3>Conta Digital</h3>
+                Experiência Alpha
 
-                        <p>
+            </span>
 
-                            Abertura rápida,
-                            simples e totalmente online.
 
-                        </p>
+            <h2 id="experience-title">
 
-                    </article>
+                Inteligência que
+                acompanha seu ritmo.
 
-                    <article class="solution-card">
+            </h2>
 
-                        <div class="solution-card__icon"></div>
 
-                        <h3>Cartões Exclusivos</h3>
+            <p>
 
-                        <p>
+                Uma plataforma intuitiva, elegante e poderosa
+                que transforma a complexidade financeira em
+                uma experiência simples, clara e extraordinária.
 
-                            Benefícios premium para o seu estilo.
+            </p>
 
-                        </p>
 
-                    </article>
+            <a
+                href="#"
+                class="button button--outline magnetic">
 
-                    <article class="solution-card">
+                Conheça a experiência
 
-                        <div class="solution-card__icon"></div>
+                <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true">
 
-                        <h3>Investimentos</h3>
+                    <path
+                        d="M5 12h14M13 6l6 6-6 6"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"/>
 
-                        <p>
+                </svg>
 
-                            Crescimento inteligente
-                            do patrimônio.
+            </a>
 
-                        </p>
 
-                    </article>
+            <!-- ============================================= -->
+            <!-- STATS -->
+            <!-- ============================================= -->
 
-                    <article class="solution-card">
+            <div class="stats">
 
-                        <div class="solution-card__icon"></div>
+                <div class="stat">
 
-                        <h3>Crédito Inteligente</h3>
+                    <strong>+1.5K</strong>
 
-                        <p>
+                    <span>Clientes</span>
 
-                            Condições flexíveis
-                            para seus objetivos.
+                </div>
 
-                        </p>
 
-                    </article>
+                <div class="stat">
 
-                    <article class="solution-card">
+                    <strong>Kz 30M</strong>
 
-                        <div class="solution-card__icon"></div>
+                    <span>Transacionados</span>
 
-                        <h3>Segurança</h3>
+                </div>
 
-                        <p>
 
-                            Proteção avançada
-                            para seus dados.
+                <div class="stat">
 
-                        </p>
+                    <strong>98.7%</strong>
 
-                    </article>
+                    <span>Satisfação</span>
 
                 </div>
 
             </div>
 
-        </section>
+        </article>
 
-        <!-- ========================================================= -->
-        <!-- EXPERIENCE -->
-        <!-- ========================================================= -->
+<!-- ================================================= -->
+<!-- VISUAL -->
+<!-- ================================================= -->
 
-        <section class="experience">
+<figure
+    class="experience__visual"
+    aria-label="Aplicativo Alpha Banking">
 
-            <div class="container experience__grid">
+    <!-- Aura -->
 
-                <article>
+    <div
+        class="circle-effect"
+        aria-hidden="true">
+    </div>
 
-                    <span>Experiência Alpha</span>
 
-                    <h2>
+    <!-- Badge -->
 
-                        Inteligência que acompanha
-                        seu ritmo.
+    <div class="experience-badge">
 
-                    </h2>
+        <span class="status"></span>
 
-                    <p>
+        Experiência em tempo real
 
-                        Uma plataforma intuitiva,
-                        elegante e poderosa.
+    </div>
 
-                    </p>
 
-                    <div class="stats">
+    <!-- Smartphone -->
 
-                        <div>
+    <div class="phone float">
 
-                            <strong>2.5M+</strong>
+        <!-- Interface interna do iPhone -->
 
-                            <span>Clientes</span>
+        <div class="banking-app">
 
-                        </div>
+            <!-- Status Bar -->
 
-                        <div>
+            <div class="banking-app__statusbar">
 
-                            <strong>R$ 8.7B</strong>
+                <span>9:41</span>
 
-                            <span>Transacionados</span>
+                <div class="banking-app__status-icons">
 
-                        </div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
 
-                        <div>
-
-                            <strong>98.7%</strong>
-
-                            <span>Satisfação</span>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-                <figure>
-
-                    <img
-                        src="assets/images/app.png"
-                        alt="Aplicativo Alpha">
-
-                </figure>
+                </div>
 
             </div>
 
-        </section>
 
+            <!-- Header -->
+
+            <header class="banking-app__header">
+
+                <div>
+
+                    <small>
+
+                        Olá, Alexandre
+
+                    </small>
+
+                    <h3>
+
+                        Minha conta
+
+                    </h3>
+
+                </div>
+
+                <button
+                    class="banking-app__avatar"
+                    aria-label="Perfil">
+
+                    A
+
+                </button>
+
+            </header>
+
+
+            <!-- Balance -->
+
+            <section class="banking-app__balance">
+
+                <span>
+
+                    Saldo disponível
+
+                </span>
+
+                <strong>
+
+                    Kz 17.215,60
+
+                </strong>
+
+                <small>
+
+                    Atualizado agora
+
+                </small>
+
+            </section>
+
+
+            <!-- Quick Actions -->
+
+            <div class="banking-app__actions">
+
+                <button>
+
+                    <span class="banking-app__action-icon">
+                        ↗
+                    </span>
+
+                    <small>
+                        Enviar
+                    </small>
+
+                </button>
+
+                <button>
+
+                    <span class="banking-app__action-icon">
+                        ↓
+                    </span>
+
+                    <small>
+                        Receber
+                    </small>
+
+                </button>
+
+                <button>
+
+                    <span class="banking-app__action-icon">
+                        +
+                    </span>
+
+                    <small>
+                        Adicionar
+                    </small>
+
+                </button>
+
+                <button>
+
+                    <span class="banking-app__action-icon">
+                        ···
+                    </span>
+
+                    <small>
+                        Mais
+                    </small>
+
+                </button>
+
+            </div>
+
+
+            <!-- Spending Card -->
+
+            <section class="banking-app__chart">
+
+                <div class="banking-app__section-head">
+
+                    <span>
+                        Fluxo financeiro
+                    </span>
+
+                    <small>
+                        Este mês
+                    </small>
+
+                </div>
+
+
+                <strong>
+
+                    +12.8%
+
+                </strong>
+
+
+                <div class="chart">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </section>
+
+
+    <!-- Cartão flutuante superior -->
+
+    <article class="floating-card card-top">
+
+        <small>
+            Saldo disponível
+        </small>
+
+        <strong>
+            Kz 17.215,60
+        </strong>
+
+        <span class="status">
+            Conta ativa
+        </span>
+
+    </article>
+
+
+    <!-- Cartão flutuante inferior -->
+
+    <article class="floating-card card-bottom">
+
+        <small>
+            Patrimônio
+        </small>
+
+        <strong>
+            +12.8%
+        </strong>
+
+        <span class="status">
+            Este mês
+        </span>
+
+    </article>
+
+</figure>
+   
         <!-- ========================================================= -->
         <!-- SECURITY -->
         <!-- ========================================================= -->
@@ -485,289 +1181,580 @@
             </div>
 
         </section>
-  <!-- ========================================================= -->
-        <!-- SOLUTIONS -->
-        <!-- ========================================================= -->
+<!-- ========================================================= -->
+<!-- SOLUTIONS -->
+<!-- ========================================================= -->
 
-        <section
-            id="solutions"
-            class="solutions"
-            aria-labelledby="solutions-title">
+<section
+    id="solutions"
+    class="solutions"
+    aria-labelledby="solutions-title">
 
-            <div class="container">
+    <div class="container">
 
-                <header class="section-heading">
 
-                    <span class="section-heading__eyebrow">
-                       <span>Mérito</span>
-                    </span>
+        <!-- ================================================= -->
+        <!-- SECTION INTRO -->
+        <!-- ================================================= -->
 
-                    <h2
-                        id="solutions-title"
-                        class="section-heading__title">
+        <header class="section-header">
 
-                        Tudo o que você precisa,
-                        em um único ecossistema.
+            <span class="section-header__eyebrow">
 
-                        
-                    </h2>
+                Mérito
 
-                    <p class="section-heading__description">
+            </span>
 
-                        
+            <h2 id="solutions-title">
 
-                    </p>
+                Tudo o que você precisa,
+                em um único ecossistema.
 
-                </header>
+            </h2>
 
-                <div
-                    class="solutions__grid"
-                    role="list">
+            <p>
 
-                    <!-- CARD 01 -->
+                Uma arquitetura financeira pensada para simplificar
+                decisões complexas e acompanhar cada etapa da sua vida.
 
-                    <article
-                        class="solution-card"
-                        role="listitem">
+            </p>
 
-                        <div class="solution-card__background"></div>
+        </header>
 
-                        <div class="solution-card__content">
 
-                            <div class="solution-card__icon">
+        <!-- ================================================= -->
+        <!-- SOLUTIONS GRID -->
+        <!-- ================================================= -->
 
-                                <svg
-                                    aria-hidden="true"
-                                    width="32"
-                                    height="32">
+        <div
+            class="solutions__grid"
+            role="list">
 
-                                    <!-- SVG -->
 
-                                </svg>
+            <!-- ============================================= -->
+            <!-- FEATURE 01 -->
+            <!-- ============================================= -->
 
-                            </div>
+            <article
+                class="solution-card solution-card--featured spotlight"
+                role="listitem">
 
-                            <h3>
+                <span class="solution-card__number">
+                    01
+                </span>
 
-                                Conta Digital
+                <div class="solution-card__background">
 
-                            </h3>
-
-                            <p>
-
-                                Abertura em poucos minutos,
-                                gerenciamento em tempo real e
-                                liquidez imediata.
-
-                            </p>
-
-                            <a
-                                href="#"
-                                class="solution-card__link">
-
-                                Saiba mais
-
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                    <!-- CARD 02 -->
-
-                    <article
-                        class="solution-card"
-                        role="listitem">
-
-                        <div class="solution-card__background"></div>
-
-                        <div class="solution-card__content">
-
-                            <div class="solution-card__icon"></div>
-
-                            <h3>
-
-                                Cartões Premium
-
-                            </h3>
-
-                            <p>
-
-                                Cartões físicos e virtuais com
-                                benefícios internacionais e
-                                segurança avançada.
-
-                            </p>
-
-                            <a
-                                href="#"
-                                class="solution-card__link">
-
-                                Explorar
-
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                    <!-- CARD 03 -->
-
-                    <article
-                        class="solution-card"
-                        role="listitem">
-
-                        <div class="solution-card__background"></div>
-
-                        <div class="solution-card__content">
-
-                            <div class="solution-card__icon"></div>
-
-                            <h3>
-
-                                Investimentos
-
-                            </h3>
-
-                            <p>
-
-                                Carteiras inteligentes,
-                                renda fixa, variável e ativos
-                                globais em uma única plataforma.
-
-                            </p>
-
-                            <a
-                                href="#"
-                                class="solution-card__link">
-
-                                Conhecer
-
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                    <!-- CARD 04 -->
-
-                    <article
-                        class="solution-card"
-                        role="listitem">
-
-                        <div class="solution-card__background"></div>
-
-                        <div class="solution-card__content">
-
-                            <div class="solution-card__icon"></div>
-
-                            <h3>
-
-                                Crédito Inteligente
-
-                            </h3>
-
-                            <p>
-
-                                Soluções personalizadas com análise
-                                dinâmica e aprovação simplificada.
-
-                            </p>
-
-                            <a
-                                href="#"
-                                class="solution-card__link">
-
-                                Solicitar
-
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                    <!-- CARD 05 -->
-
-                    <article
-                        class="solution-card"
-                        role="listitem">
-
-                        <div class="solution-card__background"></div>
-
-                        <div class="solution-card__content">
-
-                            <div class="solution-card__icon"></div>
-
-                            <h3>
-
-                                Segurança Digital
-
-                            </h3>
-
-                            <p>
-
-                                Criptografia ponta a ponta,
-                                autenticação biométrica e
-                                monitoramento contínuo.
-
-                            </p>
-
-                            <a
-                                href="#"
-                                class="solution-card__link">
-
-                                Saiba mais
-
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                    <!-- CARD 06 -->
-
-                    <article
-                        class="solution-card"
-                        role="listitem">
-
-                        <div class="solution-card__background"></div>
-
-                        <div class="solution-card__content">
-
-                            <div class="solution-card__icon"></div>
-
-                            <h3>
-
-                                Wealth Management
-
-                            </h3>
-
-                            <p>
-
-                                Gestão patrimonial com assessoria
-                                especializada e planejamento
-                                financeiro personalizado.
-
-                            </p>
-
-                            <a
-                                href="#"
-                                class="solution-card__link">
-
-                                Descobrir
-
-                            </a>
-
-                        </div>
-
-                    </article>
+                    <div class="light"></div>
 
                 </div>
 
-            </div>
+                <div class="solution-card__content">
 
-        </section>
+                    <span class="solution-card__tag">
 
+                        Conta
+
+                    </span>
+
+                    <div class="solution-card__icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true">
+
+                            <rect
+                                x="4"
+                                y="4"
+                                width="16"
+                                height="16"
+                                rx="3"
+                                stroke="currentColor"
+                                stroke-width="1.4"/>
+
+                            <path
+                                d="M8 12h8M12 8v8"
+                                stroke="currentColor"
+                                stroke-width="1.4"
+                                stroke-linecap="round"/>
+
+                        </svg>
+
+                    </div>
+
+                    <h3>
+
+                        Conta Digital
+
+                    </h3>
+
+                    <p>
+
+                        Abertura em poucos minutos,
+                        gerenciamento em tempo real e
+                        liquidez imediata.
+
+                    </p>
+
+                    <a
+                        href="#"
+                        class="solution-card__link">
+
+                        Saiba mais
+
+                        <svg
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true">
+
+                            <path
+                                d="M5 12h14M13 6l6 6-6 6"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"/>
+
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ============================================= -->
+            <!-- 02 -->
+            <!-- ============================================= -->
+
+            <article
+                class="solution-card spotlight"
+                role="listitem">
+
+                <span class="solution-card__number">
+                    02
+                </span>
+
+                <div class="solution-card__background"></div>
+
+                <div class="solution-card__content">
+
+                    <span class="solution-card__tag">
+
+                        Cartões
+
+                    </span>
+
+                    <div class="solution-card__icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true">
+
+                            <rect
+                                x="3"
+                                y="5"
+                                width="18"
+                                height="14"
+                                rx="2"
+                                stroke="currentColor"
+                                stroke-width="1.4"/>
+
+                            <path
+                                d="M3 10h18"
+                                stroke="currentColor"
+                                stroke-width="1.4"/>
+
+                        </svg>
+
+                    </div>
+
+                    <h3>
+
+                        Cartões Premium
+
+                    </h3>
+
+                    <p>
+
+                        Cartões físicos e virtuais com
+                        benefícios internacionais e
+                        segurança avançada.
+
+                    </p>
+
+                    <a
+                        href="#"
+                        class="solution-card__link">
+
+                        Explorar
+
+                        <svg
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true">
+
+                            <path
+                                d="M5 12h14M13 6l6 6-6 6"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"/>
+
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ============================================= -->
+            <!-- 03 -->
+            <!-- ============================================= -->
+
+            <article
+                class="solution-card spotlight"
+                role="listitem">
+
+                <span class="solution-card__number">
+                    03
+                </span>
+
+                <div class="solution-card__background"></div>
+
+                <div class="solution-card__content">
+
+                    <span class="solution-card__tag">
+
+                        Patrimônio
+
+                    </span>
+
+                    <div class="solution-card__icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true">
+
+                            <path
+                                d="M4 18L10 12L14 16L20 7"
+                                stroke="currentColor"
+                                stroke-width="1.4"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"/>
+
+                        </svg>
+
+                    </div>
+
+                    <h3>
+
+                        Investimentos
+
+                    </h3>
+
+                    <p>
+
+                        Carteiras inteligentes,
+                        renda fixa, variável e ativos
+                        globais em uma única plataforma.
+
+                    </p>
+
+                    <a
+                        href="#"
+                        class="solution-card__link">
+
+                        Conhecer
+
+                        <svg
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true">
+
+                            <path
+                                d="M5 12h14M13 6l6 6-6 6"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"/>
+
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ============================================= -->
+            <!-- 04 -->
+            <!-- ============================================= -->
+
+            <article
+                class="solution-card spotlight"
+                role="listitem">
+
+                <span class="solution-card__number">
+                    04
+                </span>
+
+                <div class="solution-card__background"></div>
+
+                <div class="solution-card__content">
+
+                    <span class="solution-card__tag">
+
+                        Crédito
+
+                    </span>
+
+                    <div class="solution-card__icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true">
+
+                            <path
+                                d="M4 7h16M7 4v16M17 4v16"
+                                stroke="currentColor"
+                                stroke-width="1.4"
+                                stroke-linecap="round"/>
+
+                        </svg>
+
+                    </div>
+
+                    <h3>
+
+                        Crédito Inteligente
+
+                    </h3>
+
+                    <p>
+
+                        Soluções personalizadas com análise
+                        dinâmica e aprovação simplificada.
+
+                    </p>
+
+                    <a
+                        href="#"
+                        class="solution-card__link">
+
+                        Solicitar
+
+                        <svg
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true">
+
+                            <path
+                                d="M5 12h14M13 6l6 6-6 6"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"/>
+
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ============================================= -->
+            <!-- 05 -->
+            <!-- ============================================= -->
+
+            <article
+                class="solution-card spotlight"
+                role="listitem">
+
+                <span class="solution-card__number">
+                    05
+                </span>
+
+                <div class="solution-card__background"></div>
+
+                <div class="solution-card__content">
+
+                    <span class="solution-card__tag">
+
+                        Proteção
+
+                    </span>
+
+                    <div class="solution-card__icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true">
+
+                            <path
+                                d="M12 3L20 6V11C20 16 16.5 19.5 12 21C7.5 19.5 4 16 4 11V6L12 3Z"
+                                stroke="currentColor"
+                                stroke-width="1.4"
+                                stroke-linejoin="round"/>
+
+                        </svg>
+
+                    </div>
+
+                    <h3>
+
+                        Segurança Digital
+
+                    </h3>
+
+                    <p>
+
+                        Criptografia ponta a ponta,
+                        autenticação biométrica e
+                        monitoramento contínuo.
+
+                    </p>
+
+                    <a
+                        href="#"
+                        class="solution-card__link">
+
+                        Saiba mais
+
+                        <svg
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true">
+
+                            <path
+                                d="M5 12h14M13 6l6 6-6 6"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"/>
+
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ============================================= -->
+            <!-- 06 -->
+            <!-- ============================================= -->
+
+            <article
+                class="solution-card spotlight"
+                role="listitem">
+
+                <span class="solution-card__number">
+                    06
+                </span>
+
+                <div class="solution-card__background"></div>
+
+                <div class="solution-card__content">
+
+                    <span class="solution-card__tag">
+
+                        Wealth
+
+                    </span>
+
+                    <div class="solution-card__icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true">
+
+                            <circle
+                                cx="12"
+                                cy="12"
+                                r="8"
+                                stroke="currentColor"
+                                stroke-width="1.4"/>
+
+                            <path
+                                d="M12 8v8M9 11h6"
+                                stroke="currentColor"
+                                stroke-width="1.4"
+                                stroke-linecap="round"/>
+
+                        </svg>
+
+                    </div>
+
+                    <h3>
+
+                        Wealth Management
+
+                    </h3>
+
+                    <p>
+
+                        Gestão patrimonial com assessoria
+                        especializada e planejamento
+                        financeiro personalizado.
+
+                    </p>
+
+                    <a
+                        href="#"
+                        class="solution-card__link">
+
+                        Descobrir
+
+                        <svg
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            aria-hidden="true">
+
+                            <path
+                                d="M5 12h14M13 6l6 6-6 6"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"/>
+
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
         <!-- ========================================================= -->
         <!-- FEATURES -->
         <!-- ========================================================= -->
