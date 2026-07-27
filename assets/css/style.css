@@ -5325,28 +5325,24 @@ section{
 }
 /*==================================================
   IPHONE BANKING INTERFACE
+  NAMESPACE: .banking-app
 ==================================================*/
 
-.banking-app{
+.banking-app {
 
-    position:relative;
+    position: relative;
 
-    width:100%;
-
-    height:100%;
+    width: 100%;
+    height: 100%;
 
     padding:
-
         16px
-
         18px
-
         22px;
 
-    overflow:hidden;
+    overflow: hidden;
 
     background:
-
         radial-gradient(
             circle at 85% 10%,
             rgba(197,163,106,.14),
@@ -5359,9 +5355,9 @@ section{
             #090909 100%
         );
 
-    color:var(--white);
+    color: var(--white);
 
-    font-family:var(--font-body);
+    font-family: var(--font-body);
 
 }
 
@@ -5370,50 +5366,46 @@ section{
   STATUS BAR
 ==================================================*/
 
-.banking-app__statusbar{
+.banking-app .banking-app__statusbar {
 
-    display:flex;
+    display: flex;
 
-    align-items:center;
+    align-items: center;
 
-    justify-content:space-between;
+    justify-content: space-between;
 
     padding:
-
         2px
-
         8px
-
         18px;
 
-    font-size:.72rem;
+    font-size: .72rem;
 
-    font-weight:600;
-
-}
-
-.banking-app__status-icons{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:4px;
+    font-weight: 600;
 
 }
 
-.banking-app__status-icons span{
+.banking-app .banking-app__status-icons {
 
-    display:block;
+    display: flex;
 
-    width:13px;
+    align-items: center;
 
-    height:6px;
+    gap: 4px;
 
-    border-radius:999px;
+}
+
+.banking-app .banking-app__status-icons span {
+
+    display: block;
+
+    width: 13px;
+
+    height: 6px;
+
+    border-radius: 999px;
 
     background:
-
         rgba(255,255,255,.75);
 
 }
@@ -5423,57 +5415,60 @@ section{
   APP HEADER
 ==================================================*/
 
-.banking-app__header{
+.banking-app .banking-app__header {
 
-    display:flex;
+    display: flex;
 
-    align-items:center;
+    align-items: center;
 
-    justify-content:space-between;
+    justify-content: space-between;
 
-    margin-bottom:24px;
-
-}
-
-.banking-app__header small{
-
-    display:block;
-
-    margin-bottom:5px;
-
-    color:var(--gray-500);
-
-    font-size:.68rem;
+    margin-bottom: 24px;
 
 }
 
-.banking-app__header h3{
+.banking-app .banking-app__header small {
 
-    font-size:1.35rem;
+    display: block;
 
-    line-height:1;
+    margin-bottom: 5px;
 
-    letter-spacing:-.03em;
+    color: var(--gray-500);
+
+    font-size: .68rem;
+
+}
+
+.banking-app .banking-app__header h3 {
+
+    margin: 0;
+
+    font-size: 1.35rem;
+
+    line-height: 1;
+
+    letter-spacing: -.03em;
 
 }
 
 
-.banking-app__avatar{
+.banking-app .banking-app__avatar {
 
-    width:38px;
+    width: 38px;
 
-    height:38px;
+    height: 38px;
 
-    display:grid;
+    display: grid;
 
-    place-items:center;
+    place-items: center;
 
-    border-radius:50%;
+    flex: none;
 
-    color:var(--gold-light);
+    border-radius: 50%;
+
+    color: var(--gold-light);
 
     background:
-
         linear-gradient(
             145deg,
             rgba(197,163,106,.25),
@@ -5481,14 +5476,12 @@ section{
         );
 
     border:
-
         1px solid
-
         rgba(197,163,106,.25);
 
-    font-family:var(--font-title);
+    font-family: var(--font-title);
 
-    font-size:1.1rem;
+    font-size: 1.1rem;
 
 }
 
@@ -5497,20 +5490,19 @@ section{
   BALANCE
 ==================================================*/
 
-.banking-app__balance{
+.banking-app .banking-app__balance {
 
-    position:relative;
+    position: relative;
 
-    padding:24px;
+    padding: 24px;
 
-    margin-bottom:16px;
+    margin-bottom: 16px;
 
-    border-radius:24px;
+    border-radius: 24px;
 
-    overflow:hidden;
+    overflow: hidden;
 
     background:
-
         linear-gradient(
             145deg,
             rgba(197,163,106,.18),
@@ -5518,37 +5510,32 @@ section{
         );
 
     border:
-
         1px solid
-
         rgba(197,163,106,.18);
 
     box-shadow:
-
         inset 0 1px
-
         rgba(255,255,255,.08);
 
 }
 
-.banking-app__balance::after{
+.banking-app .banking-app__balance::after {
 
-    content:"";
+    content: "";
 
-    position:absolute;
+    position: absolute;
 
-    width:150px;
+    width: 150px;
 
-    height:150px;
+    height: 150px;
 
-    right:-60px;
+    right: -60px;
 
-    top:-70px;
+    top: -70px;
 
-    border-radius:50%;
+    border-radius: 50%;
 
     background:
-
         radial-gradient(
             circle,
             rgba(223,200,156,.25),
@@ -5557,39 +5544,39 @@ section{
 
 }
 
-.banking-app__balance span{
+.banking-app .banking-app__balance span {
 
-    display:block;
+    display: block;
 
-    margin-bottom:8px;
+    margin-bottom: 8px;
 
-    color:var(--gray-400);
+    color: var(--gray-400);
 
-    font-size:.68rem;
-
-}
-
-.banking-app__balance strong{
-
-    display:block;
-
-    margin-bottom:8px;
-
-    font-family:var(--font-title);
-
-    font-size:1.9rem;
-
-    font-weight:500;
-
-    letter-spacing:-.03em;
+    font-size: .68rem;
 
 }
 
-.banking-app__balance small{
+.banking-app .banking-app__balance strong {
 
-    color:var(--gold-light);
+    display: block;
 
-    font-size:.62rem;
+    margin-bottom: 8px;
+
+    font-family: var(--font-title);
+
+    font-size: 1.9rem;
+
+    font-weight: 500;
+
+    letter-spacing: -.03em;
+
+}
+
+.banking-app .banking-app__balance small {
+
+    color: var(--gold-light);
+
+    font-size: .62rem;
 
 }
 
@@ -5598,65 +5585,71 @@ section{
   QUICK ACTIONS
 ==================================================*/
 
-.banking-app__actions{
+.banking-app .banking-app__actions {
 
-    display:grid;
+    display: grid;
 
     grid-template-columns:
+        repeat(4, minmax(0, 1fr));
 
-        repeat(4,1fr);
+    gap: 8px;
 
-    gap:8px;
-
-    margin-bottom:18px;
-
-}
-
-.banking-app__actions button{
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    gap:7px;
-
-    color:var(--gray-400);
+    margin-bottom: 18px;
 
 }
 
-.banking-app__action-icon{
+.banking-app .banking-app__actions button {
 
-    width:42px;
+    display: flex;
 
-    height:42px;
+    flex-direction: column;
 
-    display:grid;
+    align-items: center;
 
-    place-items:center;
+    gap: 7px;
 
-    border-radius:15px;
+    min-width: 0;
+
+    padding: 0;
+
+    color: var(--gray-400);
+
+    background: transparent;
+
+    border: 0;
+
+    font: inherit;
+
+}
+
+.banking-app .banking-app__action-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 15px;
 
     background:
-
         rgba(255,255,255,.045);
 
     border:
-
         1px solid
-
         rgba(255,255,255,.07);
 
-    color:var(--gold-light);
+    color: var(--gold-light);
 
-    font-size:1rem;
+    font-size: 1rem;
 
 }
 
-.banking-app__actions small{
+.banking-app .banking-app__actions small {
 
-    font-size:.58rem;
+    font-size: .58rem;
 
 }
 
@@ -5665,65 +5658,62 @@ section{
   CHART
 ==================================================*/
 
-.banking-app__chart{
+.banking-app .banking-app__chart {
 
-    padding:18px;
+    padding: 18px;
 
-    margin-bottom:18px;
+    margin-bottom: 18px;
 
-    border-radius:22px;
+    border-radius: 22px;
 
     background:
-
         rgba(255,255,255,.035);
 
     border:
-
         1px solid
-
         rgba(255,255,255,.06);
 
 }
 
-.banking-app__section-head{
+.banking-app .banking-app__section-head {
 
-    display:flex;
+    display: flex;
 
-    align-items:center;
+    align-items: center;
 
-    justify-content:space-between;
+    justify-content: space-between;
 
-    margin-bottom:12px;
-
-}
-
-.banking-app__section-head span{
-
-    color:var(--gray-300);
-
-    font-size:.68rem;
+    margin-bottom: 12px;
 
 }
 
-.banking-app__section-head small{
+.banking-app .banking-app__section-head span {
 
-    color:var(--gray-500);
+    color: var(--gray-300);
 
-    font-size:.58rem;
+    font-size: .68rem;
 
 }
 
-.banking-app__chart > strong{
+.banking-app .banking-app__section-head small {
 
-    display:block;
+    color: var(--gray-500);
 
-    margin-bottom:12px;
+    font-size: .58rem;
 
-    color:#6fdc93;
+}
 
-    font-size:1.25rem;
+.banking-app .banking-app__chart > strong {
 
-    font-weight:500;
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #6fdc93;
+
+    font-size: 1.25rem;
+
+    font-weight: 500;
 
 }
 
@@ -5732,70 +5722,70 @@ section{
   MINI GRAPH
 ==================================================*/
 
-.chart{
+.banking-app .banking-app__chart-graph {
 
-    height:58px;
+    height: 58px;
 
-    display:flex;
+    display: flex;
 
-    align-items:flex-end;
+    align-items: flex-end;
 
-    gap:5px;
+    gap: 5px;
 
 }
 
-.chart span{
+.banking-app .banking-app__chart-graph span {
 
-    flex:1;
+    flex: 1;
 
-    min-height:12px;
+    min-width: 0;
+
+    min-height: 12px;
 
     border-radius:
-
         4px 4px 2px 2px;
 
     background:
-
         linear-gradient(
             180deg,
             var(--gold-light),
             var(--gold-dark)
         );
 
-    opacity:.7;
+    opacity: .7;
 
 }
 
-.chart span:nth-child(1){
-    height:35%;
+.banking-app .banking-app__chart-graph span:nth-child(1) {
+    height: 35%;
 }
 
-.chart span:nth-child(2){
-    height:48%;
+.banking-app .banking-app__chart-graph span:nth-child(2) {
+    height: 48%;
 }
 
-.chart span:nth-child(3){
-    height:40%;
+.banking-app .banking-app__chart-graph span:nth-child(3) {
+    height: 40%;
 }
 
-.chart span:nth-child(4){
-    height:62%;
+.banking-app .banking-app__chart-graph span:nth-child(4) {
+    height: 62%;
 }
 
-.chart span:nth-child(5){
-    height:55%;
+.banking-app .banking-app__chart-graph span:nth-child(5) {
+    height: 55%;
 }
 
-.chart span:nth-child(6){
-    height:78%;
+.banking-app .banking-app__chart-graph span:nth-child(6) {
+    height: 78%;
 }
 
-.chart span:nth-child(7){
-    height:70%;
+.banking-app .banking-app__chart-graph span:nth-child(7) {
+    height: 70%;
 }
 
-.chart span:nth-child(8){
-    height:94%;
+.banking-app .banking-app__chart-graph span:nth-child(8) {
+    height: 94%;
 }
 
 
@@ -5803,117 +5793,126 @@ section{
   TRANSACTIONS
 ==================================================*/
 
-.banking-app__transactions{
+.banking-app .banking-app__transactions {
 
-    padding-bottom:72px;
+    padding-bottom: 72px;
 
 }
 
+.banking-app
 .banking-app__transactions
-.banking-app__section-head{
+.banking-app__section-head {
 
-    margin-bottom:14px;
-
-}
-
-.banking-app__section-head a{
-
-    color:var(--gold);
-
-    font-size:.6rem;
+    margin-bottom: 14px;
 
 }
 
+.banking-app
+.banking-app__transactions
+.banking-app__section-head a {
 
-.transaction{
+    color: var(--gold);
 
-    display:flex;
+    font-size: .6rem;
 
-    align-items:center;
+}
 
-    gap:10px;
+
+/*==================================================
+  TRANSACTION ITEM
+==================================================*/
+
+.banking-app .banking-app__transaction {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
 
     padding:
-
         11px
-
         0;
 
     border-bottom:
-
         1px solid
-
         rgba(255,255,255,.05);
 
 }
 
-.transaction__icon{
+.banking-app .banking-app__transaction-icon {
 
-    width:34px;
+    width: 34px;
 
-    height:34px;
+    height: 34px;
 
-    flex:none;
+    flex: none;
 
-    display:grid;
+    display: grid;
 
-    place-items:center;
+    place-items: center;
 
-    border-radius:11px;
+    border-radius: 11px;
 
-    color:var(--gold-light);
+    color: var(--gold-light);
 
     background:
-
         rgba(197,163,106,.10);
 
-    font-size:.7rem;
+    font-size: .7rem;
 
 }
 
-.transaction__content{
+.banking-app .banking-app__transaction-content {
 
-    display:flex;
+    display: flex;
 
-    flex-direction:column;
+    flex-direction: column;
 
-    gap:3px;
+    gap: 3px;
 
-    min-width:0;
+    min-width: 0;
 
-    flex:1;
-
-}
-
-.transaction__content strong{
-
-    font-size:.65rem;
-
-    font-weight:500;
+    flex: 1;
 
 }
 
-.transaction__content small{
+.banking-app
+.banking-app__transaction-content
+strong {
 
-    color:var(--gray-500);
+    font-size: .65rem;
 
-    font-size:.52rem;
-
-}
-
-.transaction__value{
-
-    font-size:.57rem;
-
-    font-weight:500;
-
-    white-space:nowrap;
+    font-weight: 500;
 
 }
 
-.transaction__value--positive{
+.banking-app
+.banking-app__transaction-content
+small {
 
-    color:#6fdc93;
+    color: var(--gray-500);
+
+    font-size: .52rem;
+
+}
+
+.banking-app .banking-app__transaction-value {
+
+    flex: none;
+
+    font-size: .57rem;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+
+}
+
+.banking-app
+.banking-app__transaction-value--positive {
+
+    color: #6fdc93;
 
 }
 
@@ -5922,74 +5921,75 @@ section{
   BOTTOM NAVIGATION
 ==================================================*/
 
-.banking-app__navigation{
+.banking-app .banking-app__navigation {
 
-    position:absolute;
+    position: absolute;
 
-    left:18px;
+    left: 18px;
 
-    right:18px;
+    right: 18px;
 
-    bottom:12px;
+    bottom: 12px;
 
-    height:58px;
+    height: 58px;
 
-    display:grid;
+    display: grid;
 
     grid-template-columns:
+        repeat(4, minmax(0, 1fr));
 
-        repeat(4,1fr);
+    align-items: center;
 
-    align-items:center;
+    padding: 5px;
 
-    padding:5px;
-
-    border-radius:20px;
+    border-radius: 20px;
 
     background:
-
         rgba(15,15,15,.88);
 
     border:
-
         1px solid
-
         rgba(255,255,255,.08);
 
-    backdrop-filter:blur(18px);
+    backdrop-filter:
+        blur(18px);
 
 }
 
-.banking-app__navigation a{
+.banking-app .banking-app__navigation a {
 
-    display:flex;
+    display: flex;
 
-    flex-direction:column;
+    flex-direction: column;
 
-    align-items:center;
+    align-items: center;
 
-    justify-content:center;
+    justify-content: center;
 
-    gap:3px;
+    gap: 3px;
 
-    color:var(--gray-600);
+    min-width: 0;
 
-}
-
-.banking-app__navigation a span{
-
-    font-size:.85rem;
+    color: var(--gray-600);
 
 }
 
-.banking-app__navigation a small{
+.banking-app .banking-app__navigation a span {
 
-    font-size:.48rem;
+    font-size: .85rem;
 
 }
 
-.banking-app__navigation a.active{
+.banking-app .banking-app__navigation a small {
 
-    color:var(--gold-light);
+    font-size: .48rem;
+
+}
+
+.banking-app
+.banking-app__navigation
+a.active {
+
+    color: var(--gold-light);
 
 }
